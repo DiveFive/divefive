@@ -1,0 +1,110 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "premium": "Premium",
+    "pressKit": "Kit de prensa",
+    "privacy": "Privacidad",
+    "terms": "Términos"
+  },
+  "hero": {
+    "title": "Conviértete en mejor buzo.",
+    "subtitle": "Registro profesional de inmersiones con analíticas, información de seguridad y gestión de sitios.",
+    "cta": "Descargar en el App Store"
+  },
+  "features": {
+    "title": "Lo que DiveFive puede hacer por ti",
+    "items": [
+      {
+        "title": "Registra cada inmersión",
+        "desc": "Profundidad, tiempo, temperatura, notas y equipo.",
+        "icon": "notebook"
+      },
+      {
+        "title": "Importa desde Apple Watch",
+        "desc": "HealthKit y UDDF para registros precisos.",
+        "icon": "sync"
+      },
+      {
+        "title": "Mapea tus sitios favoritos",
+        "desc": "Planifica con confianza usando detalles del sitio.",
+        "icon": "map"
+      },
+      {
+        "title": "Analiza y mejora",
+        "desc": "Tendencias y estadísticas para un mejor buceo.",
+        "icon": "stats"
+      }
+    ]
+  },
+  "screens": {
+    "title": "Capturas",
+    "add": "Añadir nueva inmersión",
+    "list": "Lista de registros",
+    "detail": "Detalle de inmersión",
+    "site": "Detalle del sitio de buceo",
+    "close": "Cerrar"
+  },
+  "premium": {
+    "title": "DiveFive Premium",
+    "subtitle": "Analíticas avanzadas y funciones profesionales.",
+    "cta": "Obtener DiveFive Premium",
+    "benefits": [
+      "Analíticas avanzadas",
+      "Filtros potentes",
+      "Exportaciones profesionales",
+      "Soporte prioritario",
+      "Más sitios y equipo",
+      "Futura sincronización en la nube"
+    ]
+  },
+  "pressKit": {
+    "title": "Kit de prensa",
+    "intro": "Todo lo que necesitas para cubrir DiveFive. Copia oficial, referencias de marca y metadatos.",
+    "brand": {
+      "heading": "Referencias de marca",
+      "appName": "Nombre de la app",
+      "bundleId": "Bundle ID",
+      "website": "Sitio web",
+      "supportEmail": "Correo de soporte",
+      "privacyUrl": "Política de privacidad",
+      "supportUrl": "URL de soporte",
+      "marketingUrl": "Sitio de marketing"
+    },
+    "meta": {
+      "heading": "Metadatos de App Store",
+      "subtitle": "Subtítulo",
+      "promo": "Texto promocional",
+      "keywords": "Palabras clave (separadas por comas)",
+      "description": "Descripción",
+      "releaseNotes": "Notas de la versión"
+    },
+    "assets": {
+      "heading": "Recursos de marca",
+      "logo": "Logo principal (PNG)",
+      "usage": "Guía de uso",
+      "usageText": "Usa siempre DiveFive con una F mayúscula. Mantén espacio libre, no deformes y evita cambios de color no autorizados."
+    },
+    "cta": {
+      "download": "Descargar en el App Store",
+      "privacy": "Política de privacidad",
+      "terms": "Términos de uso"
+    }
+  },
+  "brandData": {
+    "appName": "DiveFive",
+    "bundleId": "app.dive55.ios",
+    "website": "https://divefive.app",
+    "supportEmail": "support@divefive.app",
+    "privacyUrl": "https://divefive.app/privacy",
+    "supportUrl": "https://divefive.app/support",
+    "marketingUrl": "https://divefive.app"
+  },
+  "storeMeta": {
+    "subtitle": "Registro profesional de inmersiones",
+    "promo": "Aplicación profesional de registro de inmersiones hecha por buzos para buzos. Rastrea aventuras bajo el agua con analíticas, monitoreo de seguridad y gestión de sitios de buceo. Perfecta para todo tipo de buzos.",
+    "keywords": "buceo,registro de buceo,bitácora,computadora de buceo,bucear,sitios de buceo,PADI,seguridad de buceo,ssi,oceanic,descenso",
+    "description": "DiveFive es la aplicación completa de registro de inmersiones diseñada para buzos serios que quieren seguir, analizar y mejorar su rendimiento.\n\nCARACTERÍSTICAS CLAVE:\n\nREGISTRO DE INMERSIONES COMPLETO\n• Registra datos esenciales: profundidad, duración, temperatura, visibilidad\n• Rastrea equipo y mezclas de gas\n• Guarda sitios de buceo con coordenadas GPS\n• Añade notas detalladas y calificaciones\n\nANALÍTICAS AVANZADAS\n• Resumen de carrera con inmersiones totales y tiempo en el fondo\n• Registra tu inmersión más profunda y progreso\n• Analiza patrones y tendencias de inmersiones\n• Estadísticas de seguridad y seguimiento de finalización\n\nGESTIÓN DE SITIOS DE BUCEO\n• Mapas interactivos con ubicaciones\n• Construye tu base de datos personal de sitios\n• Busca y descubre nuevos sitios de buceo\n• Analíticas e historial específicos del sitio\n\nIMPORTACIÓN Y EXPORTACIÓN DE DATOS\n• Importa datos de computadoras de buceo (formato UDDF)\n• Exporta tus registros para respaldo\n• Migración y compartición de datos sin problemas\n\nSOPORTE MULTI-IDIOMA\n• Disponible en inglés y español\n• Localizada para comunidades de buceo en todo el mundo\n\nDISEÑADA POR Y PARA BUZOS\nDiveFive se centra en lo que más importa a los entusiastas del buceo: seguimiento de datos, monitoreo de seguridad y ayudarte a ser un mejor buzo mediante análisis detallados de tus aventuras submarinas.\n\nYa seas un buzo recreativo registrando viajes de fin de semana o un buzo técnico con perfiles complejos, DiveFive ofrece las herramientas fiables que necesitas para mantener registros detallados.\n\nComienza tu viaje de buceo con DiveFive y lleva tu bitácora al mundo digital.",
+    "releaseNotes": "🎉 ¡Bienvenido a DiveFive!\n\nEsta versión incluye:\n\nNUEVAS FUNCIONES:\n• Sistema completo de registro de inmersiones con seguimiento de profundidad, temperatura y duración\n• Panel interactivo con estadísticas de carrera\n• Gestión de sitios de buceo con coordenadas y mapas\n• Analíticas avanzadas y monitoreo de seguridad\n• Soporte multilenguaje (inglés, español)\n\nMEJORAS:\n• Rendimiento optimizado para colecciones grandes de inmersiones\n• Validación de datos mejorada y manejo de errores\n• Mejor accesibilidad y experiencia de usuario\n• Mejor funcionalidad sin conexión\n\nTÉCNICO:\n• Soporte de importación de datos UDDF\n• Monitoreo robusto de integridad de datos\n• Flexibilidad de unidades (métrico/imperial)\n• Capacidades profesionales de exportación de datos\n\n¿Listo para sumergirte? 🤿"
+  }
+}
+

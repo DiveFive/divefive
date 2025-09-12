@@ -1,0 +1,110 @@
+{
+  "nav": {
+    "home": "Home",
+    "premium": "Premium",
+    "pressKit": "Press Kit",
+    "privacy": "Privacy",
+    "terms": "Terms"
+  },
+  "hero": {
+    "title": "Become a better diver.",
+    "subtitle": "Professional dive logging with analytics, safety insights, and site management.",
+    "cta": "Download on the App Store"
+  },
+  "features": {
+    "title": "What DiveFive can do for you",
+    "items": [
+      {
+        "title": "Log every dive",
+        "desc": "Depth, time, temperature, notes, and equipment.",
+        "icon": "notebook"
+      },
+      {
+        "title": "Import from Apple Watch",
+        "desc": "HealthKit and UDDF for precise records.",
+        "icon": "sync"
+      },
+      {
+        "title": "Map your favorite sites",
+        "desc": "Plan with confidence using site details.",
+        "icon": "map"
+      },
+      {
+        "title": "Analyze and improve",
+        "desc": "Trends and statistics for better diving.",
+        "icon": "stats"
+      }
+    ]
+  },
+  "screens": {
+    "title": "Screenshots",
+    "add": "Add new dive",
+    "list": "Dive log list",
+    "detail": "Dive detail",
+    "site": "Dive site detail",
+    "close": "Close"
+  },
+  "premium": {
+    "title": "DiveFive Premium",
+    "subtitle": "Advanced analytics and pro features.",
+    "cta": "Get DiveFive Premium",
+    "benefits": [
+      "Advanced analytics",
+      "Powerful filters",
+      "Pro exports",
+      "Priority support",
+      "More sites and gear",
+      "Future cloud sync"
+    ]
+  },
+  "pressKit": {
+    "title": "Press Kit",
+    "intro": "Everything you need to cover DiveFive. Official copy, brand references, and metadata.",
+    "brand": {
+      "heading": "Brand References",
+      "appName": "App Name",
+      "bundleId": "Bundle ID",
+      "website": "Website",
+      "supportEmail": "Support Email",
+      "privacyUrl": "Privacy Policy",
+      "supportUrl": "Support URL",
+      "marketingUrl": "Marketing Site"
+    },
+    "meta": {
+      "heading": "App Store Metadata",
+      "subtitle": "Subtitle",
+      "promo": "Promotional Text",
+      "keywords": "Keywords (comma-separated)",
+      "description": "Description",
+      "releaseNotes": "Release Notes"
+    },
+    "assets": {
+      "heading": "Brand Assets",
+      "logo": "Primary Logo (PNG)",
+      "usage": "Usage Guidelines",
+      "usageText": "Always use DiveFive with a capital F. Maintain clear space, do not distort, and avoid unauthorized color changes."
+    },
+    "cta": {
+      "download": "Download on the App Store",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use"
+    }
+  },
+  "brandData": {
+    "appName": "DiveFive",
+    "bundleId": "app.dive55.ios",
+    "website": "https://divefive.app",
+    "supportEmail": "support@divefive.app",
+    "privacyUrl": "https://divefive.app/privacy",
+    "supportUrl": "https://divefive.app/support",
+    "marketingUrl": "https://divefive.app"
+  },
+  "storeMeta": {
+    "subtitle": "Professional dive logging",
+    "promo": "Professional dive logging app by divers, for divers. Track underwater adventures with analytics, safety monitoring, and dive site management. Perfect for all divers.",
+    "keywords": "scuba diving,divelog,logbook,dive computer,diving,dive sites,PADI,diving safety,ssi,oceanic,plunge",
+    "description": "DiveFive is the comprehensive dive logging app designed for serious divers who want to track, analyze, and improve their diving performance.\n\nKEY FEATURES:\n\nCOMPREHENSIVE DIVE LOGGING\n• Log essential dive data: depth, duration, temperature, visibility\n• Track equipment and gas mixtures\n• Record dive sites with GPS coordinates\n• Add detailed notes and ratings\n\nADVANCED ANALYTICS\n• Career overview with total dives and bottom time\n• Track your deepest dive and diving progress\n• Analyze dive patterns and trends\n• Safety statistics and completion tracking\n\nDIVE SITE MANAGEMENT\n• Interactive maps with dive site locations\n• Build your personal dive site database\n• Search and discover new dive sites\n• Site-specific analytics and history\n\nDATA IMPORT & EXPORT\n• Import dive computer data (UDDF format)\n• Export your dive logs for backup\n• Seamless data migration and sharing\n\nMULTI-LANGUAGE SUPPORT\n• Available in English and Spanish\n• Localized for diving communities worldwide\n\nDESIGNED FOR DIVERS, BY DIVERS\nDiveFive focuses on what matters most to diving enthusiasts - comprehensive data tracking, safety monitoring, and helping you become a better diver through detailed analysis of your underwater adventures.\n\nWhether you're a recreational diver logging weekend trips or a technical diver tracking complex profiles, DiveFive provides the reliable tools you need to maintain detailed dive records.\n\nStart your diving journey with DiveFive and take your logbook digital.",
+    "releaseNotes": "🎉 Welcome to DiveFive!\n\nThis release includes:\n\nNEW FEATURES:\n• Complete dive logging system with depth, temperature, and duration tracking\n• Interactive dashboard with career statistics\n• Dive site management with GPS coordinates and maps\n• Advanced dive analytics and safety monitoring\n• Multi-language support (English, Spanish)\n\nIMPROVEMENTS:\n• Optimized performance for large dive collections\n• Enhanced data validation and error handling\n• Improved accessibility and user experience\n• Better offline functionality\n\nTECHNICAL:\n• UDDF dive computer data import support\n• Robust data integrity monitoring\n• Unit system flexibility (metric/imperial)\n• Professional dive data export capabilities\n\nReady to dive in? 🤿"
+  }
+}
+

@@ -1,100 +1,83 @@
 <script setup>
-import Hero from "@/components/Hero.vue";
-import FeatureCard from "@/components/FeatureCard.vue";
-import Steps from "@/components/Steps.vue";
-import ScreenshotGrid from "@/components/ScreenshotGrid.vue";
-// Opcional: si usas Tailwind v3, recuerda importar tu CSS en main.js
+import { useI18n } from 'vue-i18n'
+import { defineComponent } from 'vue'
+import AppStoreButton from '@/components/AppStoreButton.vue'
+import ShowcaseSection from '@/components/ShowcaseSection.vue'
+import logo from '@/assets/images/logo.png'
+import imgAdd from '@/assets/images/AddNewDive.png'
+import imgList from '@/assets/images/DiveLogList.png'
+import imgDetail from '@/assets/images/DiveDetail.png'
+import imgSite from '@/assets/images/DiveSiteDetail.png'
 
-const benefits = [
-  { title: "Log your dives", description: "Keep a secure, organized record of every dive.", icon: "/icon-watch.svg" },
-  { title: "Explore new sites", description: "Interactive maps to plan and discover locations.", icon: "/icon-map.svg" },
-  { title: "Share with the community", description: "Connect with other divers and share your adventures.", icon: "/icon-log.svg" },
-];
+const { t, tm } = useI18n()
 
-const features = [
-  "Import dive workouts from HealthKit",
-  "Import UDDF files",
-  "Track dive sites and locations",
-  "Create and log pre-dive plans",
-  "Notice trends in performance and enjoyment",
-];
-
-// ✅ Declarar Icon como componente local en <script setup>
-import { defineComponent } from "vue";
 const Icon = defineComponent({
-  props: { name: { type: String, required: true } },
-  // SVGs inline para no depender de binarios
+  props: { name: String },
   template: `
-    <svg v-if="name==='watch'" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M9 2h6l1 3h2v14h-2l-1 3H9l-1-3H6V5h2l1-3Zm3 6a5 5 0 1 0 0 10 5 5 0 0 0 0-10Z"/></svg>
-    <svg v-else-if="name==='map'" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M9 3 3 5v16l6-2 6 2 6-2V3l-6 2-6-2Zm0 2.62v12.76l6 1.99V7.62L9 5.62Z"/></svg>
-    <svg v-else-if="name==='log'" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M6 4a2 2 0 0 0-2 2v13h2l2-1 2 1 2-1 2 1 2-1 2 1h2V6a2 2 0 0 0-2-2H6Zm2 4h8v2H8V8Zm0 4h8v2H8v-2Z"/></svg>
+    <svg v-if="name==='notebook'" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M6 4a2 2 0 0 0-2 2v13h2l2-1 2 1 2-1 2 1 2-1 2 1h2V6a2 2 0 0 0-2-2H6Zm2 4h8v2H8V8Zm0 4h8v2H8v-2Z"/></svg>
+    <svg v-else-if="name==='sync'" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 9.54 6.8h-2.1A8 8 0 1 1 4 12H1l4 4 4-4H6a6 6 0 1 0 5.72-7.95l.78-1.95A8 8 0 0 1 20 12h3l-4 4-4-4h2a6 6 0 1 0-5.68-8Z"/></svg>
+    <svg v-else-if="name==='map'" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M9 3 3 5v14l6-2 6 2 6-2V3l-6 2-6-2Zm0 2.62v12.76l6 1.99V7.62L9 5.62Z"/></svg>
     <svg v-else-if="name==='stats'" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M4 20h16v-2H4v2Zm2-4h3V7H6v9Zm5 0h3V4h-3v12Zm5 0h3V10h-3v6Z"/></svg>
-  `,
-});
+  `
+})
+
+const features = tm('features.items')
+
+const shots1 = [
+  { src: imgAdd,    caption: t('screens.add') },
+  { src: imgList,   caption: t('screens.list') },
+]
+const shots2 = [
+  { src: imgDetail, caption: t('screens.detail') },
+  { src: imgSite,   caption: t('screens.site') },
+]
 </script>
 
 <template>
   <div>
     <!-- Hero -->
-    <Hero />
+    <section class="text-center py-20">
+      <img :src="logo" alt="DiveFive logo" class="mx-auto h-16 mb-6" />
+      <h1 class="text-4xl font-bold mb-4">{{ t('hero.title') }}</h1>
+      <p class="text-lg mb-6 max-w-2xl mx-auto">{{ t('hero.subtitle') }}</p>
+      <AppStoreButton />
+    </section>
 
-    <!-- Benefits -->
+    <!-- Features (tu bloque existente) -->
     <section class="py-16 bg-gray-100">
-      <div class="max-w-5xl mx-auto grid md:grid-cols-3 gap-8 px-4">
-        <FeatureCard v-for="(b, idx) in benefits" :key="idx" v-bind="b" />
+      <h2 class="text-3xl font-semibold text-center mb-12">{{ t('features.title') }}</h2>
+      <div class="max-w-5xl mx-auto grid md:grid-cols-4 gap-8 px-4">
+        <div v-for="(f, idx) in features" :key="idx" class="text-center">
+          <Icon :name="f.icon" class="h-12 w-12 mx-auto mb-4 text-cyan-600" />
+          <h3 class="font-semibold mb-2">{{ f.title }}</h3>
+          <p class="text-sm text-gray-600">{{ f.desc }}</p>
+        </div>
       </div>
     </section>
 
-<!-- Features -->
-<section class="relative py-24 bg-gradient-to-b from-gray-50 to-white dark:from-gray-950 dark:to-gray-900">
-  <div class="max-w-6xl mx-auto px-6">
-    <!-- Headline -->
-    <h2 class="text-4xl md:text-5xl font-extrabold text-center tracking-tight text-gray-900 dark:text-gray-100">
-      Your digital buddy underwater
-    </h2>
-    <p class="mt-4 text-lg md:text-xl text-center text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-      DiveFive turns every dive into insights you can relive, analyze, and share.
-    </p>
+    <!-- Showcase tipo Widgetsmith -->
+    <ShowcaseSection
+      :title="t('showcase.wallpapersTitle', 'Focused logging, beautiful visuals')"
+      :description="t('showcase.wallpapersDesc', 'Log dives, coordinate maps and keep your data clean and professional.')"
+      tone="ocean"
+      :shots="shots1"
+    />
+    <ShowcaseSection
+      :title="t('showcase.superchargeTitle', 'Supercharge your diving workflow')"
+      :description="t('showcase.superchargeDesc', 'Review dive details and sites to improve with every session.')"
+      tone="light"
+      :reversed="true"
+      :shots="shots2"
+    />
 
-    <!-- Feature list -->
-<ul class="mt-16 grid md:grid-cols-2 gap-12">
-  <li v-for="(f, idx) in [
-      { title: 'Register your dives',     icon: 'log',  desc: 'Depth, time, gear and notes — logged in seconds.' },
-      { title: 'Import from Apple Watch', icon: 'sync', desc: 'Sync HealthKit data for accurate, automatic records.' },
-      { title: 'Map your favorite sites', icon: 'map',  desc: 'Pin dive spots, review conditions and plan with confidence.' },
-      { title: 'Analyze & improve',       icon: 'stats',desc: 'Spot patterns in your dives and grow as a diver.' },
-    ]"
-    :key="idx"
-    class="group flex items-start gap-6"
-  >
-    <div
-      class="flex-shrink-0 h-14 w-14 flex items-center justify-center rounded-xl
-             bg-gradient-to-b from-cyan-80 to-white dark:from-cyan-900/40 dark:to-cyan-800/30
-             ring-1 ring-cyan-100/70 dark:ring-cyan-700/40
-             transition-transform duration-300 group-hover:scale-110"
-    >
-      <Icon :name="f.icon" class="h-7 w-7 text-cyan-600 dark:text-cyan-300" />
-    </div>
-
-    <div>
-      <h3 class="text-xl md:text-2xl font-semibold text-gray-900 dark:text-gray-100 transition-colors group-hover:text-cyan-700 dark:group-hover:text-cyan-300">
-        {{ f.title }}
-      </h3>
-      <p class="mt-2 text-base md:text-lg text-gray-600 dark:text-gray-300">
-        {{ f.desc }}
-      </p>
-    </div>
-  </li>
-</ul>
-
-  </div>
-</section>
-
-
-    <!-- Steps -->
-    <Steps />
-
-    <!-- Screenshots -->
-    <ScreenshotGrid />
+    <!-- CTA final -->
+    <section class="text-center py-16">
+      <AppStoreButton />
+      <div class="mt-4 space-x-4 text-sm">
+        <RouterLink to="/privacy" class="text-cyan-600 hover:underline">{{ t('nav.privacy') }}</RouterLink>
+        <RouterLink to="/terms" class="text-cyan-600 hover:underline">{{ t('nav.terms') }}</RouterLink>
+        <RouterLink to="/press-kit" class="text-cyan-600 hover:underline">{{ t('nav.pressKit') }}</RouterLink>
+      </div>
+    </section>
   </div>
 </template>
