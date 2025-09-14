@@ -1,3 +1,4 @@
+// main.js
 import { createApp } from 'vue'
 import { createI18n } from 'vue-i18n'
 import App from './App.vue'
@@ -16,3 +17,14 @@ const i18n = createI18n({
 })
 
 createApp(App).use(router).use(i18n).mount('#app')
+
+// setThemeOnLoad: respeta localStorage y fallback a prefers-color-scheme
+(function setThemeOnLoad() {
+  const saved = localStorage.getItem('theme')  // 👈 aquí ya no usamos `as`
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
+  const theme = saved ?? (prefersDark ? 'dark' : 'light')
+
+  const root = document.documentElement
+  if (theme === 'dark') root.classList.add('dark')
+  else root.classList.remove('dark')
+})()

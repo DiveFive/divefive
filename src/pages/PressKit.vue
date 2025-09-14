@@ -50,10 +50,7 @@ const store = tm('storeMeta')
 
     <div class="text-center space-y-4">
       <AppStoreButton />
-      <div class="space-x-4 text-sm">
-        <RouterLink to="/privacy" class="text-cyan-600 hover:underline">{{ t('pressKit.cta.privacy') }}</RouterLink>
-        <RouterLink to="/terms" class="text-cyan-600 hover:underline">{{ t('pressKit.cta.terms') }}</RouterLink>
-      </div>
+
     </div>
   </section>
 </template>

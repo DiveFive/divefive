@@ -2,72 +2,57 @@
   "nav": {
     "home": "Accueil",
     "premium": "Premium",
-    "pressKit": "Kit de presse",
+    "pressKit": "Kit presse",
     "privacy": "Confidentialité",
     "terms": "Conditions"
   },
   "hero": {
-    "title": "Devenez un meilleur plongeur.",
-    "subtitle": "Journalisation professionnelle des plongées avec analyses, informations de sécurité et gestion des sites.",
-    "cta": "Télécharger sur l’App Store"
+    "title": "DiveFive",
+    "subtitle": "Devenez un meilleur plongeur.",
+    "cta": "Télécharger sur l’App Store",
+    "description": "Application professionnelle de journal de plongée, faite par des plongeurs pour des plongeurs. Suivez vos aventures sous-marines avec analyses, suivi de sécurité et gestion des sites. Parfaite pour tous les plongeurs."
   },
   "features": {
     "title": "Ce que DiveFive peut faire pour vous",
     "items": [
-      {
-        "title": "Enregistrer chaque plongée",
-        "desc": "Profondeur, durée, température, notes et équipement.",
-        "icon": "notebook"
-      },
-      {
-        "title": "Importer depuis l’Apple Watch",
-        "desc": "HealthKit et UDDF pour des enregistrements précis.",
-        "icon": "sync"
-      },
-      {
-        "title": "Cartographier vos sites favoris",
-        "desc": "Planifiez en toute confiance grâce aux détails des sites.",
-        "icon": "map"
-      },
-      {
-        "title": "Analyser et améliorer",
-        "desc": "Tendances et statistiques pour mieux plonger.",
-        "icon": "stats"
-      }
+      { "title": "Consignez chaque plongée", "desc": "Profondeur, temps, température, notes et matériel.", "icon": "notebook" },
+      { "title": "Importer depuis l’Apple Watch", "desc": "HealthKit et UDDF pour des enregistrements précis.", "icon": "sync" },
+      { "title": "Cartographiez vos sites favoris", "desc": "Planifiez en confiance avec les détails du site.", "icon": "map" },
+      { "title": "Analysez et progressez", "desc": "Tendances et statistiques pour mieux plonger.", "icon": "stats" }
     ]
   },
   "screens": {
     "title": "Captures d’écran",
     "add": "Ajouter une plongée",
-    "list": "Liste des plongées",
-    "detail": "Détails de la plongée",
-    "site": "Détails du site de plongée",
+    "list": "Liste du journal",
+    "detail": "Détail de la plongée",
+    "site": "Détail du site",
     "close": "Fermer"
   },
   "premium": {
     "title": "DiveFive Premium",
     "subtitle": "Analyses avancées et fonctions pro.",
-    "cta": "Obtenir DiveFive Premium",
+    "cta": "Passer à DiveFive Premium",
     "benefits": [
       "Analyses avancées",
       "Filtres puissants",
-      "Exportations pro",
+      "Exports professionnels",
       "Support prioritaire",
       "Plus de sites et d’équipement",
-      "Synchronisation cloud future"
+      "Synchronisation cloud à venir"
     ]
   },
   "pressKit": {
-    "title": "Kit de presse",
-    "intro": "Tout ce dont vous avez besoin pour parler de DiveFive. Texte officiel, références de marque et métadonnées.",
+    "title": "Kit presse",
+    "intro": "Tout pour présenter DiveFive : textes officiels, références de marque et métadonnées.",
     "brand": {
       "heading": "Références de marque",
-      "appName": "Nom de l’application",
+      "appName": "Nom de l’app",
       "bundleId": "Bundle ID",
       "website": "Site web",
-      "supportEmail": "Email de support",
+      "supportEmail": "E-mail support",
       "privacyUrl": "Politique de confidentialité",
-      "supportUrl": "URL d’assistance",
+      "supportUrl": "URL du support",
       "marketingUrl": "Site marketing"
     },
     "meta": {
@@ -81,8 +66,8 @@
     "assets": {
       "heading": "Ressources de marque",
       "logo": "Logo principal (PNG)",
-      "usage": "Guide d’utilisation",
-      "usageText": "Utilisez toujours DiveFive avec un F majuscule. Respectez l’espace libre, ne déformez pas et évitez les changements de couleur non autorisés."
+      "usage": "Règles d’utilisation",
+      "usageText": "Toujours écrire DiveFive avec un F majuscule. Préserver l’espace de respiration, ne pas déformer et éviter les changements de couleur non autorisés."
     },
     "cta": {
       "download": "Télécharger sur l’App Store",
@@ -100,11 +85,10 @@
     "marketingUrl": "https://divefive.app"
   },
   "storeMeta": {
-    "subtitle": "Journalisation professionnelle des plongées",
-    "promo": "Application professionnelle de journalisation des plongées créée par des plongeurs pour des plongeurs. Suivez vos aventures sous-marines avec analyses, surveillance de sécurité et gestion des sites de plongée. Parfaite pour tous les plongeurs.",
-    "keywords": "plongée sous-marine,journal de plongée,logbook,ordinateur de plongée,plongée,sites de plongée,PADI,sécurité de plongée,ssi,oceanic,immersion",
-    "description": "DiveFive est l’application complète de journal de plongée conçue pour les plongeurs sérieux qui souhaitent suivre, analyser et améliorer leurs performances de plongée.\n\nCARACTÉRISTIQUES PRINCIPALES:\n\nENREGISTREMENT COMPLET DES PLONGÉES\n• Enregistrez les données essentielles : profondeur, durée, température, visibilité\n• Suivez l’équipement et les mélanges de gaz\n• Enregistrez les sites de plongée avec coordonnées GPS\n• Ajoutez des notes détaillées et des évaluations\n\nANALYSES AVANCÉES\n• Vue d’ensemble de carrière avec nombre total de plongées et temps au fond\n• Suivez votre plongée la plus profonde et votre progression\n• Analysez les tendances et schémas de plongée\n• Statistiques de sécurité et suivi d’achèvement\n\nGESTION DES SITES DE PLONGÉE\n• Cartes interactives avec emplacements des sites\n• Construisez votre base de données personnelle de sites\n• Recherchez et découvrez de nouveaux sites\n• Analyses et historique spécifiques au site\n\nIMPORT & EXPORT DE DONNÉES\n• Importez des données d’ordinateur de plongée (format UDDF)\n• Exportez vos journaux pour sauvegarde\n• Migration et partage de données sans effort\n\nSUPPORT MULTI-LANGUE\n• Disponible en anglais et espagnol\n• Localisée pour les communautés de plongée du monde entier\n\nCONÇUE PAR DES PLONGEURS, POUR LES PLONGEURS\nDiveFive se concentre sur ce qui compte le plus pour les passionnés de plongée : le suivi complet des données, la surveillance de la sécurité et l’aide pour devenir un meilleur plongeur grâce à l’analyse détaillée de vos aventures sous-marines.\n\nQue vous soyez un plongeur loisir enregistrant des sorties de week-end ou un plongeur technique suivant des profils complexes, DiveFive fournit les outils fiables dont vous avez besoin pour conserver des journaux détaillés.\n\nCommencez votre aventure de plongée avec DiveFive et numérisez votre carnet.",
-    "releaseNotes": "🎉 Bienvenue dans DiveFive !\n\nCette version inclut :\n\nNOUVELLES FONCTIONNALITÉS :\n• Système complet de journalisation des plongées avec suivi de la profondeur, de la température et de la durée\n• Tableau de bord interactif avec statistiques de carrière\n• Gestion des sites de plongée avec coordonnées GPS et cartes\n• Analyses avancées des plongées et surveillance de la sécurité\n• Support multilingue (anglais, espagnol)\n\nAMÉLIORATIONS :\n• Performance optimisée pour de grandes collections de plongées\n• Validation des données améliorée et meilleure gestion des erreurs\n• Accessibilité et expérience utilisateur améliorées\n• Meilleure fonctionnalité hors ligne\n\nTECHNIQUE :\n• Prise en charge de l’import de données UDDF\n• Surveillance robuste de l’intégrité des données\n• Flexibilité des unités (métrique/impérial)\n• Capacités professionnelles d’export de données\n\nPrêt à plonger ? 🤿"
+    "subtitle": "Journal de plongée professionnel",
+    "promo": "Application professionnelle de journal de plongée, faite par des plongeurs pour des plongeurs. Suivez vos aventures sous-marines avec analyses, suivi de sécurité et gestion des sites. Parfaite pour tous les plongeurs.",
+    "keywords": "plongée sous-marine,journal de plongée,logbook,ordinateur de plongée,diving,sites de plongée,PADI,sécurité en plongée,SSI,océan,plunge",
+    "description": "DiveFive est l’app complète de journal de plongée conçue pour les plongeurs exigeants qui souhaitent suivre, analyser et améliorer leurs performances.\n\nFONCTIONNALITÉS CLÉS :\n\nJOURNAL COMPLET\n• Saisissez les données essentielles : profondeur, durée, température, visibilité\n• Suivez le matériel et les mélanges gazeux\n• Enregistrez les sites avec coordonnées GPS\n• Ajoutez des notes détaillées et des évaluations\n\nANALYSES AVANCÉES\n• Vue de carrière avec nombre total de plongées et temps au fond\n• Suivez votre plongée la plus profonde et votre progression\n• Analysez les tendances et les schémas\n• Statistiques de sécurité et suivi d’achèvement\n\nGESTION DES SITES\n• Cartes interactives avec emplacements des sites\n• Constituez votre base personnelle de sites\n• Recherchez et découvrez de nouveaux spots\n• Historique et analyses spécifiques par site\n\nIMPORT/EXPORT DE DONNÉES\n• Import des ordinateurs de plongée (format UDDF)\n• Export de votre journal pour sauvegarde\n• Migration et partage de données simplifiés\n\nPRISE EN CHARGE MULTILINGUE\n• Disponible en anglais et espagnol\n• Localisée pour les communautés de plongée du monde entier\n\nCONÇUE PAR DES PLONGEURS, POUR DES PLONGEURS\nDiveFive se concentre sur l’essentiel : suivi complet des données, sécurité et amélioration grâce à l’analyse détaillée de vos plongées.\n\nQue vous soyez plongeur loisir ou technique, DiveFive fournit des outils fiables pour conserver des enregistrements détaillés.\n\nCommencez votre aventure avec DiveFive et passez votre carnet au numérique.",
+    "releaseNotes": "🎉 Bienvenue sur DiveFive !\n\nCette version comprend :\n\nNOUVEAUTÉS :\n• Système complet de journal avec suivi profondeur, température et durée\n• Tableau de bord interactif avec statistiques de carrière\n• Gestion des sites avec coordonnées GPS et cartes\n• Analyses avancées et suivi de sécurité\n• Prise en charge multilingue (anglais, espagnol)\n\nAMÉLIORATIONS :\n• Performances optimisées pour de grandes collections\n• Validation des données et gestion des erreurs améliorées\n• Accessibilité et expérience utilisateur renforcées\n• Meilleur fonctionnement hors ligne\n\nTECHNIQUE :\n• Import UDDF des ordinateurs de plongée\n• Surveillance robuste de l’intégrité des données\n• Flexibilité des unités (métrique/impérial)\n• Exports de données professionnels\n\nPrêt à plonger ? 🤿"
   }
 }
-

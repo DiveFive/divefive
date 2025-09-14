@@ -7,9 +7,10 @@
     "terms": "Terms"
   },
   "hero": {
-    "title": "Become a better diver.",
-    "subtitle": "Professional dive logging with analytics, safety insights, and site management.",
-    "cta": "Download on the App Store"
+    "title": "DiveFive",
+    "subtitle": "Become a better diver.",
+    "cta": "Download on the App Store",
+    "description" : "Professional dive logging app by divers, for divers. Track underwater adventures with analytics, safety monitoring, and dive site management. Perfect for all divers."
   },
   "features": {
     "title": "What DiveFive can do for you",

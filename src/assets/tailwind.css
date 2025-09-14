@@ -2,3 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
+/* === THEME TOKENS (Light / Dark) === */
+:root {
+    /* Brand */
+    --brand-primary: #003366;    /* Deep Ocean Blue */
+    --brand-accent:  #FF6600;    /* Safety Orange */
+  
+    /* Light theme surfaces & content */
+    --bg:        #F9FAFB;  /* App background (light) */
+    --surface:   #FFFFFF;  /* Cards / secciones */
+    --surface-2: #F3F4F6;  /* Encabezados suaves (thead), subtle */
+    --content-primary:   #111827; /* Texto principal */
+    --content-secondary: #6B7280; /* Texto secundario */
+  
+    /* Borders / rings */
+    --border: #E5E7EB;
+    --ring:   #E5E7EB;
+  }
+  
+  :root.dark {
+    /* Dark theme */
+    --bg:        #0A0A0A;  /* Fondo (dark) según guía */
+    --surface:   #111111;  /* Superficie principal */
+    --surface-2: #181818;  /* Superficie secundaria */
+    --content-primary:   #F3F4F6; /* Texto principal */
+    --content-secondary: #9CA3AF; /* Texto secundario */
+  
+    --border: #2A2A2A;
+    --ring:   #2A2A2A;
+  }
+  
+  /* Helpers opcionales si quieres atajos semánticos con utilidades arbitrarias: */
+  /* ejemplo: class="bg-[color:var(--surface)]" ya funciona sin esto */
+  
