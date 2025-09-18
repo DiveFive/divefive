@@ -1,0 +1,10 @@
+{
+  "slug": "terms",
+  "locale": "en",
+  "html": "<h2>Acceptance</h2>\n<p>By using DiveFive you agree to these terms and the privacy policy.</p>\n<h2>Usage</h2>\n<p>You may use the service for commercial dive operations you control. Sharing accounts outside your organisation is prohibited.</p>\n<h2>Liability</h2>\n<p>DiveFive provides the service &quot;as is&quot; and disclaims liability for indirect damages to the extent permitted by law.</p>",
+  "meta": {
+    "title": "Terms of service",
+    "description": "Contractual terms governing DiveFive usage.",
+    "updated": "2025-02-05"
+  }
+}

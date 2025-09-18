@@ -1,0 +1,10 @@
+{
+  "slug": "press-kit",
+  "locale": "en",
+  "html": "<h2>Assets</h2>\n<ul><li>Logos in SVG and PNG (light and dark backgrounds).</li><li>Product screenshots for desktop, tablet, and Apple Watch.</li><li>Executive bios and approved quotes.</li></ul>\n<h2>Usage guidelines</h2>\n<p>Use the name <strong>DiveFive</strong> with camel-case styling and link to https://divefive.app. Please avoid recolouring the logo outside the provided palettes.</p>",
+  "meta": {
+    "title": "Press resources",
+    "description": "Assets and guidelines for covering DiveFive.",
+    "updated": "2025-02-01"
+  }
+}

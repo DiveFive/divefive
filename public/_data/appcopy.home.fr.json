@@ -1,0 +1,10 @@
+{
+  "slug": "home",
+  "locale": "fr",
+  "html": "<h2>Préparation opérationnelle</h2>\n<p>DiveFive est conçu pour les équipes d&#39;expédition qui exigent des journaux vérifiables sans sacrifier la rapidité. Configurez des modèles pour les sorties loisirs, les campagnes scientifiques ou les missions de secours et diffusez les mises à jour immédiatement.</p>\n<ul><li>Attribuez rôles, matériel et notes médicales avant chaque plongée.</li><li>Joignez prévisions météo, marées et procédures d&#39;urgence en temps réel.</li><li>Enregistrez anomalies et interventions sur l&#39;équipement dès qu&#39;elles surviennent.</li></ul>\n<h2>Sécurité par conception</h2>\n<p>DiveFive chiffre les journaux au repos et en transit, prend en charge les clés de sécurité matérielles pour les administrateurs et conserve des pistes d&#39;audit immuables pour les autorités et partenaires.</p>\n<h2>Équipages multilingues</h2>\n<p>Briefings, listes de contrôle et annotations peuvent être traduits instantanément entre English, Español (México) et Français afin que chaque plongeur reçoive les consignes dans sa langue.</p>",
+  "meta": {
+    "title": "Vue opérationnelle",
+    "description": "DiveFive aligne les équipes avant, pendant et après chaque plongée. Préparez les briefs, consignez les résultats et documentez les retours d'expérience dans un espace sécurisé.",
+    "updated": "2025-02-18"
+  }
+}

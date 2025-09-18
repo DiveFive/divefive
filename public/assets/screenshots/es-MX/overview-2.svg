@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title">
+  <title>Analytics DiveFive oscuro</title>
+  <rect width="640" height="360" rx="32" fill="#020817" />
+  <rect x="40" y="52" width="560" height="256" rx="24" fill="#0f172a" />
+  <text x="80" y="104" font-family="Inter, sans-serif" font-size="22" fill="#38bdf8">Tendencia SAC</text>
+  <polyline points="80,220 160,180 240,210 320,160 400,190 480,150 560,170" fill="none" stroke="#38bdf8" stroke-width="6" stroke-linecap="round" />
+  <text x="80" y="260" font-family="Inter, sans-serif" font-size="16" fill="#e2e8f0">Mejora semana tras semana</text>
+</svg>

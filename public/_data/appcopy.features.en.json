@@ -1,0 +1,10 @@
+{
+  "slug": "features",
+  "locale": "en",
+  "html": "<h2>Platform modules</h2>\n<ul><li><strong>Dive log core</strong> — Structured entries, version history, and offline sync.</li><li><strong>Equipment lifecycle</strong> — Track maintenance schedules, serial numbers, and spare kits.</li><li><strong>Medical readiness</strong> — Capture fitness-to-dive certifications and incident reports with restricted access.</li></ul>\n<h2>Integrations</h2>\n<ul><li>Apple Health and Apple Watch.</li><li>UDDF import/export for dive computers.</li><li>Secure SFTP export for training agencies and regulators.</li></ul>\n<h2>Coming soon</h2>\n<p>Support for MOD calculations, GNSS buoy imports, and mission timelines.</p>",
+  "meta": {
+    "title": "Feature catalogue",
+    "description": "Detailed modules and integrations included in DiveFive deployments.",
+    "updated": "2025-02-10"
+  }
+}

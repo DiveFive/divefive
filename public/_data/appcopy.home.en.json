@@ -1,0 +1,10 @@
+{
+  "slug": "home",
+  "locale": "en",
+  "html": "<h2>Operational readiness, distilled</h2>\n<p>DiveFive is engineered for expedition teams that demand auditable records without sacrificing speed. Configure templates for recreational outings, scientific expeditions, or public safety missions and push updates instantly to every device.</p>\n<ul><li>Assign roles, equipment pools, and medical notes ahead of each dive.</li><li>Attach live weather feeds, tide predictions, and emergency procedures.</li><li>Record anomalies and equipment interventions the moment they surface.</li></ul>\n<h2>Security-first by default</h2>\n<p>DiveFive encrypts records at rest and in motion, supports hardware security keys for administrative users, and provides immutable audit trails for regulators and partner agencies.</p>\n<h2>Built for multilingual crews</h2>\n<p>Mission briefs, checklists, and annotations can be translated on demand across English, Español (México), and Français so that every diver receives instructions in their preferred language.</p>",
+  "meta": {
+    "title": "Operational overview",
+    "description": "DiveFive keeps teams aligned before, during, and after every dive. Plan your mission briefs, capture outcomes, and track lessons learned in one secure surface.",
+    "updated": "2025-02-18"
+  }
+}

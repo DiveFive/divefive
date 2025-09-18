@@ -1,0 +1,10 @@
+{
+  "slug": "features",
+  "locale": "fr",
+  "html": "<h2>Modules de la plateforme</h2>\n<ul><li><strong>Noyau journal</strong> — Entrées structurées, historique des versions et synchronisation hors ligne.</li><li><strong>Cycle de vie du matériel</strong> — Suivi des maintenances, numéros de série et kits de secours.</li><li><strong>Préparation médicale</strong> — Certificats d&#39;aptitude et rapports d&#39;incident avec accès restreint.</li></ul>\n<h2>Intégrations</h2>\n<ul><li>Apple Health et Apple Watch.</li><li>Import/export UDDF pour ordinateurs de plongée.</li><li>Export sécurisé SFTP pour agences de formation et autorités.</li></ul>\n<h2>Bientôt disponible</h2>\n<p>Prise en charge des calculs MOD, importation de bouées GNSS et chronologies de mission.</p>",
+  "meta": {
+    "title": "Catalogue des fonctionnalités",
+    "description": "Modules et intégrations inclus dans les déploiements DiveFive.",
+    "updated": "2025-02-10"
+  }
+}

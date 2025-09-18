@@ -1,0 +1,10 @@
+{
+  "slug": "press-kit",
+  "locale": "es-MX",
+  "html": "<h2>Materiales</h2>\n<ul><li>Logotipos en SVG y PNG (fondos claros y oscuros).</li><li>Capturas de producto para escritorio, tableta y Apple Watch.</li><li>Biografías ejecutivas y citas aprobadas.</li></ul>\n<h2>Lineamientos de uso</h2>\n<p>Utiliza el nombre <strong>DiveFive</strong> con mayúscula intermedia y enlaza a https://divefive.app. Evita recolorear el logotipo fuera de las paletas oficiales.</p>",
+  "meta": {
+    "title": "Recursos de prensa",
+    "description": "Materiales y lineamientos para cubrir DiveFive.",
+    "updated": "2025-02-01"
+  }
+}

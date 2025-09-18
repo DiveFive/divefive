@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360" role="img" aria-labelledby="title">
+  <title>Resumen DiveFive claro</title>
+  <defs>
+    <linearGradient id="bg-es" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0ea5e9" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0.6" />
+    </linearGradient>
+  </defs>
+  <rect width="640" height="360" rx="32" fill="url(#bg-es)" />
+  <rect x="32" y="40" width="576" height="56" rx="16" fill="#ffffff" opacity="0.9" />
+  <text x="64" y="76" font-family="Inter, sans-serif" font-size="24" fill="#0f172a">Briefing de inmersión</text>
+  <rect x="32" y="120" width="576" height="180" rx="24" fill="#ffffff" opacity="0.92" />
+  <text x="64" y="170" font-family="Inter, sans-serif" font-size="20" fill="#0f172a">Métricas · Operación lista</text>
+  <text x="64" y="210" font-family="Inter, sans-serif" font-size="16" fill="#334155">215K inmersiones · 18K sitios</text>
+</svg>

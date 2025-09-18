@@ -1,0 +1,10 @@
+{
+  "slug": "terms",
+  "locale": "es-MX",
+  "html": "<h2>Aceptación</h2>\n<p>Al utilizar DiveFive aceptas estos términos y el aviso de privacidad.</p>\n<h2>Uso</h2>\n<p>Puedes usar el servicio para operaciones de buceo comerciales bajo tu control. Está prohibido compartir cuentas fuera de tu organización.</p>\n<h2>Responsabilidad</h2>\n<p>DiveFive se ofrece &quot;tal cual&quot; y rechaza la responsabilidad por daños indirectos en la medida permitida por la ley.</p>",
+  "meta": {
+    "title": "Términos de servicio",
+    "description": "Condiciones contractuales para el uso de DiveFive.",
+    "updated": "2025-02-05"
+  }
+}

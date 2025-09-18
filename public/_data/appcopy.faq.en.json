@@ -1,0 +1,10 @@
+{
+  "slug": "faq",
+  "locale": "en",
+  "html": "<h2>Who uses DiveFive?</h2>\n<p>Dive operators, technical instructors, public safety dive teams, and scientific expeditions who require auditable logs and bilingual briefings.</p>\n<h2>How is data stored?</h2>\n<p>DiveFive uses region-specific storage with encryption at rest and TLS 1.3 in transit. Administrators can export immutable archives for compliance.</p>\n<h2>Is there offline support?</h2>\n<p>Yes. DiveFive caches records on device and reconciles updates once a connection is restored.</p>",
+  "meta": {
+    "title": "Frequently asked questions",
+    "description": "Guidance for evaluating DiveFive deployments.",
+    "updated": "2025-01-30"
+  }
+}

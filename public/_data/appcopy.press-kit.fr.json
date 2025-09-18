@@ -1,0 +1,10 @@
+{
+  "slug": "press-kit",
+  "locale": "fr",
+  "html": "<h2>Supports</h2>\n<ul><li>Logos en SVG et PNG (fonds clairs et foncés).</li><li>Captures produit pour bureau, tablette et Apple Watch.</li><li>Bios dirigeantes et citations approuvées.</li></ul>\n<h2>Directives d&#39;utilisation</h2>\n<p>Utilisez le nom <strong>DiveFive</strong> avec la casse camel et pointez vers https://divefive.app. Merci de ne pas recoloriser le logo en dehors des palettes officielles.</p>",
+  "meta": {
+    "title": "Ressources presse",
+    "description": "Supports et directives pour parler de DiveFive.",
+    "updated": "2025-02-01"
+  }
+}

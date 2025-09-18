@@ -1,0 +1,13 @@
+{
+  "locale": "fr",
+  "items": [
+    {
+      "filename": "overview-1.svg",
+      "src": "assets/screenshots/fr/overview-1.svg"
+    },
+    {
+      "filename": "overview-2.svg",
+      "src": "assets/screenshots/fr/overview-2.svg"
+    }
+  ]
+}

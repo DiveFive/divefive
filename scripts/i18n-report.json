@@ -1,0 +1,185 @@
+{
+  "generatedAt": "2025-09-19T20:06:28.370Z",
+  "filesScanned": 35,
+  "keys": {
+    "footer.tagline": [
+      {
+        "file": "src/components/AppFooter.vue",
+        "line": 26
+      }
+    ],
+    "footer.copyright": [
+      {
+        "file": "src/components/AppFooter.vue",
+        "line": 36
+      }
+    ],
+    "app.name": [
+      {
+        "file": "src/components/AppHeader.vue",
+        "line": 24
+      },
+      {
+        "file": "src/components/AppHeader.vue",
+        "line": 25
+      }
+    ],
+    "appStoreBadge.aria": [
+      {
+        "file": "src/components/AppStoreBadge.vue",
+        "line": 19
+      }
+    ],
+    "appStoreBadge.alt": [
+      {
+        "file": "src/components/AppStoreBadge.vue",
+        "line": 21
+      }
+    ],
+    "home.benefits": [
+      {
+        "file": "src/components/BenefitSection.vue",
+        "line": 13
+      }
+    ],
+    "home.featureList": [
+      {
+        "file": "src/components/FeatureList.vue",
+        "line": 13
+      }
+    ],
+    "hero.metrics": [
+      {
+        "file": "src/components/HeroSection.vue",
+        "line": 13
+      }
+    ],
+    "hero.kicker": [
+      {
+        "file": "src/components/HeroSection.vue",
+        "line": 29
+      }
+    ],
+    "hero.heading": [
+      {
+        "file": "src/components/HeroSection.vue",
+        "line": 30
+      }
+    ],
+    "hero.subheading": [
+      {
+        "file": "src/components/HeroSection.vue",
+        "line": 31
+      }
+    ],
+    "hero.primaryCta": [
+      {
+        "file": "src/components/HeroSection.vue",
+        "line": 34
+      }
+    ],
+    "hero.secondaryCta": [
+      {
+        "file": "src/components/HeroSection.vue",
+        "line": 37
+      }
+    ],
+    "languageMenu.label": [
+      {
+        "file": "src/components/LanguageMenu.vue",
+        "line": 19
+      }
+    ],
+    "languageMenu.trigger": [
+      {
+        "file": "src/components/LanguageMenu.vue",
+        "line": 25
+      }
+    ],
+    "state.loading": [
+      {
+        "file": "src/components/MarkdownSection.vue",
+        "line": 14
+      },
+      {
+        "file": "src/components/ScreenshotGallery.vue",
+        "line": 64
+      }
+    ],
+    "errors.content": [
+      {
+        "file": "src/components/MarkdownSection.vue",
+        "line": 15
+      },
+      {
+        "file": "src/components/ScreenshotGallery.vue",
+        "line": 67
+      }
+    ],
+    "home.screenshots.title": [
+      {
+        "file": "src/components/ScreenshotGallery.vue",
+        "line": 60
+      }
+    ],
+    "home.screenshots.caption": [
+      {
+        "file": "src/components/ScreenshotGallery.vue",
+        "line": 61
+      }
+    ],
+    "home.screenshots.alt": [
+      {
+        "file": "src/components/ScreenshotGallery.vue",
+        "line": 71
+      }
+    ],
+    "home.steps": [
+      {
+        "file": "src/components/StepsSection.vue",
+        "line": 12
+      }
+    ],
+    "theme.label": [
+      {
+        "file": "src/components/ThemeToggle.vue",
+        "line": 16
+      },
+      {
+        "file": "src/components/ThemeToggle.vue",
+        "line": 22
+      }
+    ],
+    "meta.title": [
+      {
+        "file": "src/composables/useMeta.js",
+        "line": 19
+      }
+    ],
+    "meta.description": [
+      {
+        "file": "src/composables/useMeta.js",
+        "line": 23
+      }
+    ],
+    "meta.ogTitle": [
+      {
+        "file": "src/composables/useMeta.js",
+        "line": 24
+      }
+    ],
+    "meta.ogDescription": [
+      {
+        "file": "src/composables/useMeta.js",
+        "line": 25
+      }
+    ],
+    "languageMenu.options.${locale}": [
+      {
+        "file": "src/i18n/i18n.js",
+        "line": 205
+      }
+    ]
+  },
+  "totalKeys": 27
+}

@@ -1,0 +1,10 @@
+{
+  "slug": "features",
+  "locale": "es-MX",
+  "html": "<h2>Módulos de la plataforma</h2>\n<ul><li><strong>Núcleo de bitácoras</strong> — Entradas estructuradas, historial de versiones y sincronización sin conexión.</li><li><strong>Ciclo de vida de equipo</strong> — Control de mantenimientos, números de serie y kits de repuesto.</li><li><strong>Preparación médica</strong> — Certificados de aptitud y reportes de incidentes con acceso restringido.</li></ul>\n<h2>Integraciones</h2>\n<ul><li>Apple Health y Apple Watch.</li><li>Importación/exportación UDDF para computadoras de buceo.</li><li>Exportación SFTP segura para agencias de entrenamiento y reguladores.</li></ul>\n<h2>Próximamente</h2>\n<p>Soporte para cálculos MOD, importación de boyas GNSS y cronologías de misión.</p>",
+  "meta": {
+    "title": "Catálogo de funcionalidades",
+    "description": "Módulos e integraciones disponibles en las implementaciones de DiveFive.",
+    "updated": "2025-02-10"
+  }
+}

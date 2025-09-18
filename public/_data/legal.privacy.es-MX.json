@@ -1,0 +1,10 @@
+{
+  "slug": "privacy",
+  "locale": "es-MX",
+  "html": "<h2>Recolección de datos</h2>\n<p>Recopilamos datos de cuenta, identificadores de dispositivo, metadatos de inmersiones y diagnósticos exclusivamente para prestar el servicio.</p>\n<h2>Conservación de datos</h2>\n<p>Los datos operativos se conservan hasta que los elimines o finalice tu contrato. Los registros diagnósticos se depuran después de 30 días.</p>\n<h2>Tus derechos</h2>\n<p>Puedes exportar, corregir o eliminar tus datos personales en cualquier momento escribiendo a privacy@divefive.app.</p>",
+  "meta": {
+    "title": "Aviso de privacidad",
+    "description": "Cómo DiveFive trata los datos personales y operativos.",
+    "updated": "2025-02-05"
+  }
+}
