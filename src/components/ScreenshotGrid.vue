@@ -1,52 +1,69 @@
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { ref, computed, onMounted, onBeforeUnmount } from 'vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Navigation, Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 
-// ✅ Tus imágenes
-import AddNewDive from '@/assets/images/AddNewDive.png'
-import DiveLogList from '@/assets/images/DiveLogList.png'
-import DiveDetail from '@/assets/images/DiveDetail.png'
-import DiveSiteDetail from '@/assets/images/DiveSiteDetail.png'
+import { useLocalizedContent } from '@/composables/useLocalizedContent'
+import { useI18n } from '@/i18n'
 
-const screenshots = [
-  { src: AddNewDive, alt: 'Add new dive' },
-  { src: DiveLogList, alt: 'Dive log list' },
-  { src: DiveDetail, alt: 'Dive detail' },
-  { src: DiveSiteDetail, alt: 'Dive site detail' },
-]
+const { t } = useI18n()
+const { data, status } = useLocalizedContent('screenshots')
 
-// Lightbox state
 const open = ref(false)
 const index = ref(0)
 const zoomed = ref(false)
 
-// Handlers
+const screenshots = computed(() => {
+  const items = Array.isArray(data.value) ? data.value : []
+  return items.map(item => ({
+    src: item.file,
+    alt: t(`screenshots.alt.${item.slug}`)
+  }))
+})
+
+const hasScreenshots = computed(() => screenshots.value.length > 0)
+
+const fallbackMessage = computed(() => {
+  if (status.value === 'loading') return t('content.loading')
+  if (status.value === 'error') return t('content.error')
+  return t('content.empty')
+})
+
 function openLightbox(i) {
+  if (!hasScreenshots.value) return
   index.value = i
   open.value = true
   zoomed.value = false
-  document.documentElement.style.overflow = 'hidden' // evita scroll debajo
+  document.documentElement.style.overflow = 'hidden'
 }
+
 function closeLightbox() {
   open.value = false
   zoomed.value = false
   document.documentElement.style.overflow = ''
 }
+
 function toggleZoom() {
   zoomed.value = !zoomed.value
 }
+
 function prev() {
-  index.value = (index.value - 1 + screenshots.length) % screenshots.length
+  const total = screenshots.value.length
+  if (!total) return
+  index.value = (index.value - 1 + total) % total
   zoomed.value = false
 }
+
 function next() {
-  index.value = (index.value + 1) % screenshots.length
+  const total = screenshots.value.length
+  if (!total) return
+  index.value = (index.value + 1) % total
   zoomed.value = false
 }
+
 function onKey(e) {
   if (!open.value) return
   if (e.key === 'Escape') closeLightbox()
@@ -61,8 +78,8 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKey))
 <template>
   <section class="py-16">
     <div class="max-w-6xl mx-auto px-4">
-
       <Swiper
+        v-if="hasScreenshots"
         :modules="[Navigation, Pagination]"
         :navigation="true"
         :pagination="{ clickable: true }"
@@ -81,10 +98,12 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKey))
           </div>
         </SwiperSlide>
       </Swiper>
+      <p v-else class="text-center text-gray-600 dark:text-gray-300 py-12">
+        {{ fallbackMessage }}
+      </p>
     </div>
   </section>
 
-  <!-- Lightbox -->
   <transition name="fade">
     <div
       v-if="open"
@@ -92,30 +111,28 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKey))
       @click.self="closeLightbox"
       aria-modal="true"
       role="dialog"
+      :aria-label="t('lightbox.modalLabel')"
     >
-      <!-- Prev -->
       <button
         class="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 text-white/90 bg-white/10 hover:bg-white/20 border border-white/20 rounded-full w-10 h-10 flex items-center justify-center"
         @click.stop="prev"
-        aria-label="Previous screenshot"
+        :aria-label="t('lightbox.previous')"
       >
         ‹
       </button>
 
-      <!-- Next -->
       <button
         class="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 text-white/90 bg-white/10 hover:bg-white/20 border border-white/20 rounded-full w-10 h-10 flex items-center justify-center"
         @click.stop="next"
-        aria-label="Next screenshot"
+        :aria-label="t('lightbox.next')"
       >
         ›
       </button>
 
-      <!-- Imagen -->
       <div class="max-w-6xl max-h-[85vh] w-full flex items-center justify-center">
         <img
-          :src="screenshots[index].src"
-          :alt="screenshots[index].alt"
+          :src="screenshots[index]?.src"
+          :alt="screenshots[index]?.alt"
           class="select-none transition-transform duration-300 object-contain max-h-[85vh] max-w-full"
           :class="zoomed ? 'scale-125 cursor-zoom-out' : 'scale-100 cursor-zoom-in'"
           @click.stop="toggleZoom"
@@ -124,13 +141,12 @@ onBeforeUnmount(() => window.removeEventListener('keydown', onKey))
         />
       </div>
 
-      <!-- Close -->
       <button
         class="absolute top-4 right-4 text-white/90 bg-white/10 hover:bg-white/20 border border-white/20 rounded-full px-3 py-1.5 text-sm"
         @click="closeLightbox"
-        aria-label="Close"
+        :aria-label="t('lightbox.close')"
       >
-        Close
+        {{ t('lightbox.close') }}
       </button>
     </div>
   </transition>

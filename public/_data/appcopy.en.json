@@ -1,0 +1,11 @@
+{
+  "faq": {
+    "body": "## Frequently asked questions\n\n1. **Is DiveFive available on Android?** Not yet. We are focused on a secure iOS experience first.\n2. **Can I export my logs?** Yes, DiveFive exports to UDDF and PDF from the profile screen.\n3. **Does DiveFive work offline?** The logbook and planning tools work without connectivity and sync when you reconnect.\n\nStill have doubts? Visit [divefive.app](https://divefive.app) for more answers.\n"
+  },
+  "features": {
+    "body": "# DiveFive feature highlights\n\n- Unified HealthKit synchronization keeps your dives accurate.\n- Automatic UDDF import handles logs from your dive computer.\n- Location bookmarks remember tides, weather and buddy notes.\n- Shared dive plans help teams stay aligned before every descent.\n\nNeed something extra? Reach out to the DiveFive team at [support@divefive.app](mailto:support@divefive.app).\n"
+  },
+  "pressKit": {
+    "body": "## Press kit\n\nDownload the full media kit at [divefive.app/press](https://divefive.app/press).\n\n- Product screenshots in light and dark mode.\n- Brand guidelines referencing typography, color and logo usage.\n- Executive bios and product timeline.\n\nFor interview requests email [press@divefive.app](mailto:press@divefive.app).\n"
+  }
+}

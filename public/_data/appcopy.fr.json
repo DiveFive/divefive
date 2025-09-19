@@ -1,0 +1,11 @@
+{
+  "faq": {
+    "body": "## Questions fréquentes\n\n1. **DiveFive est-il disponible sur Android ?** Pas encore. Nous sécurisons d'abord l'expérience iOS.\n2. **Puis-je exporter mes journaux ?** Oui, export UDDF et PDF depuis votre profil.\n3. **DiveFive fonctionne-t-il hors ligne ?** Le carnet et la préparation fonctionnent sans réseau puis se synchronisent.\n\nD'autres questions ? Rendez-vous sur [divefive.app](https://divefive.app).\n"
+  },
+  "features": {
+    "body": "# Points forts de DiveFive\n\n- La synchronisation HealthKit maintient des journaux précis.\n- L'import UDDF automatique gère les données de votre ordinateur de plongée.\n- Les favoris de sites mémorisent marées, météo et notes d'équipe.\n- Les plans partagés alignent tout le monde avant chaque mise à l'eau.\n\nBesoin d'aide ? Contactez [support@divefive.app](mailto:support@divefive.app).\n"
+  },
+  "pressKit": {
+    "body": "## Kit presse\n\nTéléchargez le kit complet sur [divefive.app/press](https://divefive.app/press).\n\n- Captures du produit en mode clair et sombre.\n- Guides de marque : typographie, couleurs et usage du logo.\n- Biographies des dirigeants et chronologie produit.\n\nPour une interview contactez [press@divefive.app](mailto:press@divefive.app).\n"
+  }
+}

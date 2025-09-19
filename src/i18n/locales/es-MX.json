@@ -1,0 +1,138 @@
+{
+  "app": {
+    "brand": "DiveFive",
+    "nav": {
+      "features": "Características",
+      "faq": "Preguntas frecuentes",
+      "privacy": "Privacidad",
+      "pressKit": "Kit de prensa"
+    },
+    "footer": {
+      "copyright": "© 2025 DiveFive"
+    },
+    "language": {
+      "ariaLabel": "Cambiar idioma",
+      "options": {
+        "en": "EN",
+        "es-MX": "ES",
+        "fr": "FR"
+      }
+    },
+    "logoAlt": "Logotipo de DiveFive"
+  },
+  "hero": {
+    "title": "DiveFive — tu bitácora de buceo inteligente",
+    "subtitle": "Aplicación iOS para registrar inmersiones, importar datos de Apple Watch y UDDF, mapear sitios y seguir tus estadísticas.",
+    "badgeLabel": "Descargar en el App Store"
+  },
+  "home": {
+    "benefits": [
+      {
+        "title": "Registra tus inmersiones",
+        "description": "Lleva un registro seguro y organizado de cada inmersión.",
+        "icon": "watch"
+      },
+      {
+        "title": "Explora nuevos sitios",
+        "description": "Mapas interactivos para planear y descubrir ubicaciones.",
+        "icon": "map"
+      },
+      {
+        "title": "Comparte con la comunidad",
+        "description": "Conéctate con otros buzos y comparte tus aventuras.",
+        "icon": "log"
+      }
+    ],
+    "featureSection": {
+      "title": "Tu compañero digital bajo el agua",
+      "description": "DiveFive convierte cada inmersión en información para revivirla, analizarla y compartirla.",
+      "items": [
+        {
+          "title": "Registra tus inmersiones",
+          "description": "Profundidad, tiempo, equipo y notas: todo en segundos.",
+          "icon": "log"
+        },
+        {
+          "title": "Importa desde Apple Watch",
+          "description": "Sincroniza datos de HealthKit para registros automáticos y precisos.",
+          "icon": "sync"
+        },
+        {
+          "title": "Mapea tus sitios favoritos",
+          "description": "Marca puntos de buceo, revisa condiciones y planea con confianza.",
+          "icon": "map"
+        },
+        {
+          "title": "Analiza y mejora",
+          "description": "Detecta patrones en tus inmersiones y crece como buzo.",
+          "icon": "stats"
+        }
+      ]
+    },
+    "featureCard": {
+      "ariaLabel": "Tarjeta de característica"
+    }
+  },
+  "steps": {
+    "title": "Cómo funciona",
+    "description": "Tres pasos sencillos para convertir cada inmersión en aprendizajes.",
+    "items": [
+      {
+        "text": "Registra tu inmersión",
+        "icon": "watch"
+      },
+      {
+        "text": "Agrega ubicación y detalles",
+        "icon": "map"
+      },
+      {
+        "text": "Analiza tus estadísticas",
+        "icon": "log"
+      }
+    ]
+  },
+  "screenshots": {
+    "alt": {
+      "addNewDive": "Captura: agregar nueva inmersión",
+      "diveLogList": "Captura: lista de bitácoras",
+      "diveDetail": "Captura: detalle de inmersión",
+      "diveSiteDetail": "Captura: detalle del sitio"
+    }
+  },
+  "lightbox": {
+    "previous": "Captura anterior",
+    "next": "Siguiente captura",
+    "close": "Cerrar",
+    "modalLabel": "Galería de capturas"
+  },
+  "appStore": {
+    "alt": {
+      "en": "Download on the App Store",
+      "es-MX": "Descargar en el App Store",
+      "fr": "Télécharger dans l’App Store"
+    }
+  },
+  "pages": {
+    "features": {
+      "title": "Características",
+      "summary": "Detalles sobre las funciones de DiveFive."
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "summary": "Respuestas a dudas comunes sobre DiveFive."
+    },
+    "privacy": {
+      "title": "Privacidad",
+      "summary": "Política de privacidad de DiveFive."
+    },
+    "pressKit": {
+      "title": "Kit de prensa",
+      "summary": "Recursos de prensa de DiveFive."
+    }
+  },
+  "content": {
+    "loading": "Cargando contenido…",
+    "error": "El contenido no está disponible en este momento.",
+    "empty": "Las capturas aparecerán aquí en cuanto las agregues."
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "app": {
+    "brand": "DiveFive",
+    "nav": {
+      "features": "Features",
+      "faq": "FAQ",
+      "privacy": "Privacy",
+      "pressKit": "Press Kit"
+    },
+    "footer": {
+      "copyright": "© 2025 DiveFive"
+    },
+    "language": {
+      "ariaLabel": "Change language",
+      "options": {
+        "en": "EN",
+        "es-MX": "ES",
+        "fr": "FR"
+      }
+    },
+    "logoAlt": "DiveFive logo"
+  },
+  "hero": {
+    "title": "DiveFive — your smart dive log",
+    "subtitle": "iOS dive app that lets you record dives, import Apple Watch and UDDF data, map sites, and track stats.",
+    "badgeLabel": "Download on the App Store"
+  },
+  "home": {
+    "benefits": [
+      {
+        "title": "Log your dives",
+        "description": "Keep a secure, organized record of every dive.",
+        "icon": "watch"
+      },
+      {
+        "title": "Explore new sites",
+        "description": "Interactive maps to plan and discover locations.",
+        "icon": "map"
+      },
+      {
+        "title": "Share with the community",
+        "description": "Connect with other divers and share your adventures.",
+        "icon": "log"
+      }
+    ],
+    "featureSection": {
+      "title": "Your digital buddy underwater",
+      "description": "DiveFive turns every dive into insights you can relive, analyze, and share.",
+      "items": [
+        {
+          "title": "Register your dives",
+          "description": "Depth, time, gear and notes — logged in seconds.",
+          "icon": "log"
+        },
+        {
+          "title": "Import from Apple Watch",
+          "description": "Sync HealthKit data for accurate, automatic records.",
+          "icon": "sync"
+        },
+        {
+          "title": "Map your favorite sites",
+          "description": "Pin dive spots, review conditions and plan with confidence.",
+          "icon": "map"
+        },
+        {
+          "title": "Analyze & improve",
+          "description": "Spot patterns in your dives and grow as a diver.",
+          "icon": "stats"
+        }
+      ]
+    },
+    "featureCard": {
+      "ariaLabel": "Feature card"
+    }
+  },
+  "steps": {
+    "title": "How it works",
+    "description": "Three simple steps to turn every dive into insight.",
+    "items": [
+      {
+        "text": "Record your dive",
+        "icon": "watch"
+      },
+      {
+        "text": "Add location and details",
+        "icon": "map"
+      },
+      {
+        "text": "Analyze your stats",
+        "icon": "log"
+      }
+    ]
+  },
+  "screenshots": {
+    "alt": {
+      "addNewDive": "Add new dive screenshot",
+      "diveLogList": "Dive log list screenshot",
+      "diveDetail": "Dive detail screenshot",
+      "diveSiteDetail": "Dive site detail screenshot"
+    }
+  },
+  "lightbox": {
+    "previous": "Previous screenshot",
+    "next": "Next screenshot",
+    "close": "Close",
+    "modalLabel": "Screenshot gallery"
+  },
+  "appStore": {
+    "alt": {
+      "en": "Download on the App Store",
+      "es-MX": "Descargar en el App Store",
+      "fr": "Télécharger dans l’App Store"
+    }
+  },
+  "pages": {
+    "features": {
+      "title": "Features",
+      "summary": "Details about DiveFive features."
+    },
+    "faq": {
+      "title": "FAQ",
+      "summary": "Frequently asked questions about DiveFive."
+    },
+    "privacy": {
+      "title": "Privacy",
+      "summary": "DiveFive privacy policy."
+    },
+    "pressKit": {
+      "title": "Press Kit",
+      "summary": "DiveFive press resources."
+    }
+  },
+  "content": {
+    "loading": "Loading content…",
+    "error": "Content is unavailable right now.",
+    "empty": "Screenshots will appear here once you add them."
+  }
+}
