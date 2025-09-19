@@ -1,11 +1,31 @@
 <script setup>
-import { reactive } from 'vue'
+import { computed, reactive, watch } from 'vue'
+import { useI18n } from '@/i18n'
 
-const steps = reactive([
-  { icon: '/icon-watch.svg', text: 'Record your dive', error: false },
-  { icon: '/icon-map.svg', text: 'Add location and details', error: false },
-  { icon: '/icon-log.svg', text: 'Analyze your stats', error: false }
-])
+const { t } = useI18n()
+
+const iconMap = {
+  watch: '/icon-watch.svg',
+  map: '/icon-map.svg',
+  log: '/icon-log.svg'
+}
+
+const localizedSteps = computed(() => {
+  const items = t('steps.items', null, { returnObjects: true }) || []
+  return items.map(item => ({
+    icon: item.icon && iconMap[item.icon] ? iconMap[item.icon] : item.icon,
+    text: item.text
+  }))
+})
+
+const steps = reactive([])
+
+watch(localizedSteps, value => {
+  steps.splice(0, steps.length, ...value.map(item => ({ ...item, error: false })))
+}, { immediate: true })
+
+const heading = computed(() => t('steps.title'))
+const description = computed(() => t('steps.description'))
 </script>
 
 <template>
@@ -19,10 +39,10 @@ const steps = reactive([
 
     <div class="relative max-w-6xl mx-auto px-4">
       <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-center text-gray-900 dark:text-gray-100">
-        How it works
+        {{ heading }}
       </h2>
       <p class="mt-3 text-center text-gray-600 dark:text-gray-300">
-        Three simple steps to turn every dive into insight.
+        {{ description }}
       </p>
 
       <div
@@ -39,7 +59,7 @@ const steps = reactive([
                  hover:-translate-y-1 hover:shadow-xl hover:border-cyan-300/60
                  focus-within:-translate-y-1 focus-within:shadow-xl focus-within:border-cyan-400/70"
           tabindex="0"
-          :aria-label="`Step ${idx + 1}: ${step.text}`"
+          :aria-label="`${idx + 1}. ${step.text}`"
           role="listitem"
         >
           <!-- Halo sutil al hover -->

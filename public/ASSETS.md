@@ -1,11 +1,11 @@
-# DiveFive Landing Assets
+# DiveFive Assets
 
-Place the following image files in this directory before building:
+El flujo actualizado administra las imágenes desde `/content/screenshots/{locale}/`. Ejecuta `npm run build:content` para copiar los archivos a `public/content/` y generar `/_data/screenshots.{locale}.json`.
 
-- diving-hero.jpg – hero background photo for social previews
-- logo.svg – site favicon
-- icon-watch.svg – watch/HealthKit icon
-- icon-map.svg – map icon
-- icon-log.svg – dive log icon
+Los nombres sugeridos son:
+- `add-new-dive.png`
+- `dive-log-list.png`
+- `dive-detail.png`
+- `dive-site-detail.png`
 
-Add the files with the exact names above before deploying.
+Los assets de branding de la App Store se encuentran en `src/assets/app-store/` y se seleccionan automáticamente por idioma y tema.

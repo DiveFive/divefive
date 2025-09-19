@@ -1,0 +1,52 @@
+body {
+  background-color: var(--color-surface-primary);
+  color: var(--color-text-primary);
+}
+
+.bg-white { background-color: var(--color-surface-primary) !important; }
+.bg-gray-100 { background-color: var(--color-surface-muted) !important; }
+.bg-gray-900 { background-color: var(--color-surface-inverse) !important; }
+.bg-white\/80 { background-color: color-mix(in srgb, var(--color-surface-primary) 80%, transparent) !important; }
+.dark\:bg-gray-900\/60 { background-color: color-mix(in srgb, var(--color-surface-primary) 60%, transparent) !important; }
+.bg-black\/80 { background-color: var(--color-overlay-strong) !important; }
+.bg-white\/10 { background-color: color-mix(in srgb, var(--color-text-inverse) 10%, transparent) !important; }
+.bg-white\/20 { background-color: color-mix(in srgb, var(--color-text-inverse) 20%, transparent) !important; }
+
+.text-gray-900 { color: var(--color-text-strong) !important; }
+.text-gray-800, .text-gray-700 { color: var(--color-text-primary) !important; }
+.text-gray-600, .text-gray-500 { color: var(--color-text-muted) !important; }
+.text-gray-400, .text-gray-300, .text-gray-200 { color: var(--color-text-subtle) !important; }
+.text-gray-100, .text-white { color: var(--color-text-inverse) !important; }
+.text-gray-700.dark\:text-gray-200 { color: var(--color-text-primary) !important; }
+
+.hover\:text-cyan-600:hover, .text-cyan-600 { color: var(--color-accent-primary) !important; }
+.bg-blue-600 { background-color: var(--color-cta-primary) !important; color: var(--color-cta-contrast) !important; }
+
+.from-cyan-900 { --tw-gradient-from: var(--color-hero-gradient-from) !important; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(15, 23, 42, 0)); }
+.to-cyan-600 { --tw-gradient-to: var(--color-hero-gradient-to) !important; }
+.from-gray-50 { --tw-gradient-from: color-mix(in srgb, var(--color-surface-primary) 95%, var(--color-surface-muted)) !important; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(15, 23, 42, 0)); }
+.to-white { --tw-gradient-to: var(--color-surface-primary) !important; }
+.from-cyan-80 { --tw-gradient-from: color-mix(in srgb, var(--color-accent-primary) 20%, var(--color-surface-primary)) !important; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(15, 23, 42, 0)); }
+
+[data-theme='dark'] .dark\:text-gray-100 { color: var(--color-text-strong) !important; }
+[data-theme='dark'] .dark\:text-gray-200 { color: var(--color-text-primary) !important; }
+[data-theme='dark'] .dark\:text-gray-300 { color: var(--color-text-muted) !important; }
+[data-theme='dark'] .dark\:text-gray-400 { color: var(--color-text-subtle) !important; }
+[data-theme='dark'] .dark\:text-cyan-300 { color: var(--color-accent-primary) !important; }
+[data-theme='dark'] .dark\:bg-gray-950 { background-color: var(--color-surface-muted) !important; }
+[data-theme='dark'] .dark\:from-gray-950 { --tw-gradient-from: var(--color-surface-muted) !important; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(15, 23, 42, 0)); }
+[data-theme='dark'] .dark\:to-gray-900 { --tw-gradient-to: var(--color-surface-primary) !important; }
+[data-theme='dark'] .dark\:from-cyan-900\/40 { --tw-gradient-from: color-mix(in srgb, var(--color-accent-primary) 40%, transparent) !important; --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(15, 23, 42, 0)); }
+[data-theme='dark'] .dark\:to-cyan-800\/30 { --tw-gradient-to: color-mix(in srgb, var(--color-accent-strong) 30%, transparent) !important; }
+
+.ring-cyan-100\/60, .ring-cyan-100\/70 { --tw-ring-color: color-mix(in srgb, var(--color-accent-primary) 35%, transparent) !important; }
+[data-theme='dark'] .dark\:ring-cyan-700\/40 { --tw-ring-color: color-mix(in srgb, var(--color-accent-strong) 40%, transparent) !important; }
+
+.border-white\/20 { border-color: color-mix(in srgb, var(--color-text-inverse) 20%, transparent) !important; }
+.text-white\/90 { color: color-mix(in srgb, var(--color-text-inverse) 90%, transparent) !important; }
+.border-gray-200 { border-color: color-mix(in srgb, var(--color-text-subtle) 60%, transparent) !important; }
+
+.focus\:ring-cyan-500:focus { box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-accent-primary) 55%, transparent) !important; }
+.focus\:ring-cyan-400\/60:focus { box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-accent-primary) 40%, transparent) !important; }
+
+.bg-white\/10:hover, .hover\:bg-white\/20:hover { background-color: color-mix(in srgb, var(--color-text-inverse) 20%, transparent) !important; }

@@ -1,0 +1,138 @@
+{
+  "app": {
+    "brand": "DiveFive",
+    "nav": {
+      "features": "Fonctionnalités",
+      "faq": "FAQ",
+      "privacy": "Confidentialité",
+      "pressKit": "Kit de presse"
+    },
+    "footer": {
+      "copyright": "© 2025 DiveFive"
+    },
+    "language": {
+      "ariaLabel": "Changer de langue",
+      "options": {
+        "en": "EN",
+        "es-MX": "ES",
+        "fr": "FR"
+      }
+    },
+    "logoAlt": "Logo DiveFive"
+  },
+  "hero": {
+    "title": "DiveFive — votre carnet de plongée intelligent",
+    "subtitle": "Application iOS pour enregistrer vos plongées, importer les données Apple Watch et UDDF, cartographier les sites et suivre vos statistiques.",
+    "badgeLabel": "Télécharger dans l’App Store"
+  },
+  "home": {
+    "benefits": [
+      {
+        "title": "Enregistrez vos plongées",
+        "description": "Conservez une trace sécurisée et organisée de chaque plongée.",
+        "icon": "watch"
+      },
+      {
+        "title": "Explorez de nouveaux sites",
+        "description": "Cartes interactives pour planifier et découvrir des lieux.",
+        "icon": "map"
+      },
+      {
+        "title": "Partagez avec la communauté",
+        "description": "Connectez-vous avec d’autres plongeurs et partagez vos aventures.",
+        "icon": "log"
+      }
+    ],
+    "featureSection": {
+      "title": "Votre compagnon numérique sous l’eau",
+      "description": "DiveFive transforme chaque plongée en informations à revivre, analyser et partager.",
+      "items": [
+        {
+          "title": "Consignez vos plongées",
+          "description": "Profondeur, durée, équipement et notes — enregistrés en quelques secondes.",
+          "icon": "log"
+        },
+        {
+          "title": "Importez depuis Apple Watch",
+          "description": "Synchronisez les données HealthKit pour des enregistrements précis et automatiques.",
+          "icon": "sync"
+        },
+        {
+          "title": "Cartographiez vos sites favoris",
+          "description": "Epinglez des spots, révisez les conditions et planifiez en toute confiance.",
+          "icon": "map"
+        },
+        {
+          "title": "Analysez et progressez",
+          "description": "Identifiez les tendances de vos plongées et progressez en tant que plongeur.",
+          "icon": "stats"
+        }
+      ]
+    },
+    "featureCard": {
+      "ariaLabel": "Carte de fonctionnalité"
+    }
+  },
+  "steps": {
+    "title": "Comment ça marche",
+    "description": "Trois étapes simples pour transformer chaque plongée en enseignements.",
+    "items": [
+      {
+        "text": "Enregistrez votre plongée",
+        "icon": "watch"
+      },
+      {
+        "text": "Ajoutez lieu et détails",
+        "icon": "map"
+      },
+      {
+        "text": "Analysez vos statistiques",
+        "icon": "log"
+      }
+    ]
+  },
+  "screenshots": {
+    "alt": {
+      "addNewDive": "Capture : ajouter une plongée",
+      "diveLogList": "Capture : liste des plongées",
+      "diveDetail": "Capture : détail de la plongée",
+      "diveSiteDetail": "Capture : détail du site"
+    }
+  },
+  "lightbox": {
+    "previous": "Capture précédente",
+    "next": "Capture suivante",
+    "close": "Fermer",
+    "modalLabel": "Galerie de captures"
+  },
+  "appStore": {
+    "alt": {
+      "en": "Download on the App Store",
+      "es-MX": "Descargar en el App Store",
+      "fr": "Télécharger dans l’App Store"
+    }
+  },
+  "pages": {
+    "features": {
+      "title": "Fonctionnalités",
+      "summary": "Détails sur les fonctionnalités de DiveFive."
+    },
+    "faq": {
+      "title": "FAQ",
+      "summary": "Questions fréquentes à propos de DiveFive."
+    },
+    "privacy": {
+      "title": "Confidentialité",
+      "summary": "Politique de confidentialité de DiveFive."
+    },
+    "pressKit": {
+      "title": "Kit de presse",
+      "summary": "Ressources presse de DiveFive."
+    }
+  },
+  "content": {
+    "loading": "Chargement du contenu…",
+    "error": "Le contenu est indisponible pour le moment.",
+    "empty": "Les captures s’afficheront ici dès que vous les ajouterez."
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "faq": {
+    "body": "## Preguntas frecuentes\n\n1. **¿DiveFive está disponible en Android?** Aún no. Primero garantizamos una experiencia segura en iOS.\n2. **¿Puedo exportar mis registros?** Sí, desde tu perfil puedes exportar en UDDF y PDF.\n3. **¿Funciona DiveFive sin conexión?** El registro y la planeación funcionan offline y sincronizan al reconectarte.\n\n¿Tienes otra duda? Visita [divefive.app](https://divefive.app) para más respuestas.\n"
+  },
+  "features": {
+    "body": "# Características clave de DiveFive\n\n- La sincronización con HealthKit mantiene tus inmersiones precisas.\n- La importación automática de UDDF aprovecha tu computadora de buceo.\n- Los marcadores de ubicación guardan mareas, clima y notas del equipo.\n- Los planes compartidos alinean al equipo antes de cada descenso.\n\n¿Necesitas algo más? Escríbenos a [support@divefive.app](mailto:support@divefive.app).\n"
+  },
+  "pressKit": {
+    "body": "## Kit de prensa\n\nDescarga el kit completo en [divefive.app/press](https://divefive.app/press).\n\n- Capturas del producto en modo claro y oscuro.\n- Guías de marca con tipografía, color y uso del logotipo.\n- Biografías del equipo y cronología del producto.\n\nPara entrevistas escribe a [press@divefive.app](mailto:press@divefive.app).\n"
+  }
+}

@@ -1,0 +1,3 @@
+{
+  "body": "# Privacy policy\n\nDiveFive stores dive log information securely on your device and syncs to iCloud if you enable backups. We never sell personal data.\n\n## Data we process\n- Dive metadata and notes you enter.\n- HealthKit workouts when you grant permission.\n- Diagnostic logs to improve stability.\n\n## Your controls\nYou can delete any dive entry, revoke HealthKit permissions, or request support at [privacy@divefive.app](mailto:privacy@divefive.app).\n"
+}
