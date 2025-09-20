@@ -1,0 +1,20 @@
+{
+  "faq": {
+    "body": "Preguntas frecuentes\n\n¿Qué dispositivos soporta DiveFive?\nDiveFive es compatible con iPhone y Apple Watch con iOS 17 o superior.\n\n¿Puedo exportar mis datos?\nSí, exporta a UDDF, CSV y PDF con un solo toque.\n"
+  },
+  "features": {
+    "body": "Resumen de funciones de DiveFive\nDiveFive centraliza el registro, las analíticas y la planeación de sitios en un solo espacio diseñado para buzos profesionales.\n"
+  },
+  "heroDescription": {
+    "body": "DiveFive es la bitácora profesional para buzos que buscan analíticas, indicadores de seguridad y la mejor forma de contar cada inmersión.\n"
+  },
+  "presskitIntro": {
+    "body": "Consulta mensajes oficiales, recursos y metadatos para comunicar DiveFive con precisión en prensa, redes y App Store.\n"
+  },
+  "releaseNotes": {
+    "body": "DiveFive 1.0\n- Nuevo panel profesional con gráficas de profundidad y temperatura\n- Gestor de sitios de buceo con GPS y notas sin conexión\n- Importación desde Apple Watch Ultra y computadoras compatibles\n- Exportación a UDDF, CSV y PDF\n- Accesibilidad y localización completas en inglés, español (México) y francés\n"
+  },
+  "storeDescription": {
+    "body": "DiveFive es el compañero integral de registro para quienes desean un historial preciso, analíticas accionables y un registro impecable de cada inmersión.\n\nDestacados:\n• Registro completo con perfiles, equipo y compañeros\n• Importación desde Apple Watch y computadoras compatibles con UDDF\n• Base personal de sitios con mapas, notas y calificaciones\n• Analíticas para seguir profundidad, tiempo, paradas de seguridad y progreso\n• Exportaciones compartibles para agencias y entrenadores\n\nDiseñada por buzos, DiveFive mantiene tus aventuras organizadas, con información útil y listas para la siguiente inmersión.\n"
+  }
+}

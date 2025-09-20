@@ -1,0 +1,145 @@
+{
+  "app": {
+    "name": "DiveFive",
+    "copyright": "© 2025 DiveFive. Todos los derechos reservados.",
+    "aria": {
+      "featureCard": "Tarjeta de función de DiveFive",
+      "languageMenu": "Seleccionar idioma de visualización"
+    }
+  },
+  "nav": {
+    "home": "Inicio",
+    "features": "Funciones",
+    "faq": "FAQ",
+    "premium": "Premium",
+    "pressKit": "Kit de Prensa",
+    "privacy": "Privacidad",
+    "terms": "Términos"
+  },
+  "language": {
+    "label": "Idioma",
+    "options": {
+      "en": "English",
+      "es-MX": "Español (México)",
+      "fr": "Français"
+    }
+  },
+  "hero": {
+    "title": "DiveFive",
+    "subtitle": "Conviértete en un mejor buzo."
+  },
+  "features": {
+    "title": "Lo que DiveFive puede hacer por ti",
+    "items": [
+      {
+        "title": "Registra cada inmersión",
+        "desc": "Profundidad, tiempo, temperatura, notas y equipo.",
+        "icon": "notebook"
+      },
+      {
+        "title": "Importa desde Apple Watch",
+        "desc": "HealthKit y UDDF para registros precisos.",
+        "icon": "sync"
+      },
+      {
+        "title": "Mapea tus sitios favoritos",
+        "desc": "Planifica con confianza usando la información del sitio.",
+        "icon": "map"
+      },
+      {
+        "title": "Analiza y mejora",
+        "desc": "Tendencias y estadísticas para un mejor buceo.",
+        "icon": "stats"
+      }
+    ]
+  },
+  "showcase": {
+    "wallpapersTitle": "Registro enfocado, visuales increíbles",
+    "wallpapersDesc": "Registra inmersiones, coordina mapas y mantén tus datos impecables.",
+    "superchargeTitle": "Impulsa tu flujo de buceo",
+    "superchargeDesc": "Revisa detalles y sitios para mejorar en cada sesión."
+  },
+  "screens": {
+    "title": "Capturas de pantalla",
+    "add": "Agregar nueva inmersión",
+    "list": "Lista de inmersiones",
+    "detail": "Detalle de inmersión",
+    "site": "Detalle del sitio",
+    "close": "Cerrar"
+  },
+  "premium": {
+    "title": "DiveFive Premium",
+    "subtitle": "Analíticas avanzadas y funciones profesionales.",
+    "cta": "Obtén DiveFive Premium",
+    "plans": {
+      "free": "Gratis",
+      "premium": "Premium"
+    },
+    "benefits": [
+      "Analíticas avanzadas",
+      "Filtros potentes",
+      "Exportaciones profesionales",
+      "Soporte prioritario",
+      "Más sitios y equipo",
+      "Próxima sincronización en la nube"
+    ]
+  },
+  "pressKit": {
+    "title": "Kit de Prensa",
+    "brand": {
+      "heading": "Referencias de Marca",
+      "appName": "Nombre de la app",
+      "bundleId": "Bundle ID",
+      "website": "Sitio web",
+      "supportEmail": "Correo de soporte",
+      "privacyUrl": "Política de privacidad",
+      "supportUrl": "URL de soporte",
+      "marketingUrl": "Sitio de marketing"
+    },
+    "meta": {
+      "heading": "Metadatos de App Store",
+      "subtitle": "Subtítulo",
+      "promo": "Texto promocional",
+      "keywords": "Palabras clave (separadas por comas)",
+      "description": "Descripción",
+      "releaseNotes": "Notas de la versión"
+    },
+    "assets": {
+      "heading": "Recursos de marca",
+      "logo": "Logo principal (PNG)",
+      "usage": "Guías de uso",
+      "usageText": "Usa siempre DiveFive con F mayúscula. Mantén espacio libre, no deformes ni cambies los colores sin autorización."
+    }
+  },
+  "brandData": {
+    "appName": "DiveFive",
+    "bundleId": "app.dive55.ios",
+    "website": "https://divefive.app",
+    "supportEmail": "support@divefive.app",
+    "privacyUrl": "https://divefive.app/privacy",
+    "supportUrl": "https://divefive.app/support",
+    "marketingUrl": "https://divefive.app"
+  },
+  "storeMeta": {
+    "subtitle": "Registro profesional de inmersiones",
+    "promo": "Aplicación profesional de registro de inmersiones hecha por buzos, para buzos. Registra tus aventuras bajo el agua con analíticas, monitoreo de seguridad y gestión de sitios de buceo. Ideal para todos los niveles.",
+    "keywords": "buceo,registro de buceo,logbook,computadora de buceo,diving,sitios de buceo,PADI,seguridad de buceo,SSI,oceanic,plunge"
+  },
+  "legal": {
+    "privacy": "Privacidad",
+    "terms": "Términos"
+  },
+  "faq": {
+    "title": "Preguntas frecuentes"
+  },
+  "featuresPage": {
+    "title": "Funciones"
+  },
+  "gallery": {
+    "open": "Abrir galería",
+    "close": "Cerrar galería",
+    "next": "Siguiente captura",
+    "prev": "Captura anterior",
+    "zoom": "Alternar zoom"
+  }
+}

@@ -1,31 +1,33 @@
-## DiveFive Landing
+# DiveFive Webapp
+Estado: i18n (en/es-MX/fr) • theming auto (light/dark) • contenido administrable • GitHub Pages
 
-Landing page de marketing para la app de buceo DiveFive construida con Vue 3 y Vite.
+## Objetivo
+Sitio de DiveFive con contenido en `/content` (MD/TXT + imgs) que se compila a `/public/_data` en build.
 
-## Ejecutar localmente
-1. Instalar dependencias (opcional si ya están instaladas): `npm install`
-2. Iniciar el servidor de desarrollo: `npm run dev`
-3. Abrir <http://localhost:5173> en el navegador
-4. Usar los enlaces del footer para visitar `/features`, `/faq`, `/privacy` y `/press-kit`
+## Stack
+Vue 3 + Vite + TS • vue-i18n • CSS Vars + prefers-color-scheme • GitHub Actions (Pages)
 
-## Deploy en Vercel
-1. Crear un proyecto en [Vercel](https://vercel.com/) y enlazar este repositorio
-2. Configurar comando de build: `npm run build`
-3. Añadir las imágenes listadas en `public/ASSETS.md` antes de desplegar
-4. Cada push a la rama principal o a una PR generará una preview automática
+## Quick Start
+npm ci && npm run dev
 
-## Imágenes
-Los archivos de imagen no se incluyen en el repositorio. Consulta `public/ASSETS.md` para conocer los nombres de archivo que debes agregar manualmente en `public/`.
+## Build & Deploy
+node scripts/build-manifests.mjs && npm run build  
+El push a `main` publica en Pages (ver `.github/workflows/deploy.yml`).
 
-## Archivos relevantes
-- `index.html`
-- `src/main.js`
-- `src/App.vue`
-- `src/router.js`
-- `src/pages/Features.vue`
-- `src/pages/Faq.vue`
-- `src/pages/Privacy.vue`
-- `src/pages/PressKit.vue`
+## Estructura
+src/ • content/ (legal, appcopy, screenshots) • public/_data • scripts/ • docs/
 
-## Pruebas
-- `npm run dev`
+## i18n
+UI corta: `src/i18n/*.json` • Textos largos: `/content/appcopy` y `/content/legal`
+
+## Theming
+Automático (sin botón). Tokens semánticos. No cambia layout ni colores aprobados.
+
+## App Store Badge
+Cambia según idioma/tema (negro en light, blanco en dark). Ver `src/components/AppStoreBadge.vue`.
+
+## Documentación
+docs/TECHNICAL_GUIDE.md • docs/ADMIN_GUIDE.md • docs/DESIGN_RULES.md • docs/DESIGN_PHILOSOPHY.md • docs/BRAND_REFERENCES.md
+
+## Calidad
+WCAG AA • aria • E2E smoke locales/temas • lint i18n

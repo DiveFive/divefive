@@ -1,0 +1,145 @@
+{
+  "app": {
+    "name": "DiveFive",
+    "copyright": "© 2025 DiveFive. Tous droits réservés.",
+    "aria": {
+      "featureCard": "Carte de fonctionnalité DiveFive",
+      "languageMenu": "Sélectionner la langue d’affichage"
+    }
+  },
+  "nav": {
+    "home": "Accueil",
+    "features": "Fonctionnalités",
+    "faq": "FAQ",
+    "premium": "Premium",
+    "pressKit": "Kit presse",
+    "privacy": "Confidentialité",
+    "terms": "Conditions"
+  },
+  "language": {
+    "label": "Langue",
+    "options": {
+      "en": "English",
+      "es-MX": "Español (México)",
+      "fr": "Français"
+    }
+  },
+  "hero": {
+    "title": "DiveFive",
+    "subtitle": "Progressez à chaque plongée."
+  },
+  "features": {
+    "title": "Ce que DiveFive fait pour vous",
+    "items": [
+      {
+        "title": "Consignez chaque plongée",
+        "desc": "Profondeur, durée, température, notes et équipement.",
+        "icon": "notebook"
+      },
+      {
+        "title": "Importez depuis l’Apple Watch",
+        "desc": "HealthKit et UDDF pour des journaux précis.",
+        "icon": "sync"
+      },
+      {
+        "title": "Cartographiez vos sites favoris",
+        "desc": "Planifiez sereinement avec les détails des sites.",
+        "icon": "map"
+      },
+      {
+        "title": "Analysez et progressez",
+        "desc": "Tendances et statistiques pour améliorer vos plongées.",
+        "icon": "stats"
+      }
+    ]
+  },
+  "showcase": {
+    "wallpapersTitle": "Journal précis, visuels soignés",
+    "wallpapersDesc": "Consignez vos plongées, organisez vos cartes et gardez des données impeccables.",
+    "superchargeTitle": "Accélérez votre workflow de plongée",
+    "superchargeDesc": "Analysez chaque détail pour progresser plongée après plongée."
+  },
+  "screens": {
+    "title": "Captures d’écran",
+    "add": "Ajouter une plongée",
+    "list": "Liste des plongées",
+    "detail": "Détail de plongée",
+    "site": "Fiche du site",
+    "close": "Fermer"
+  },
+  "premium": {
+    "title": "DiveFive Premium",
+    "subtitle": "Analyses avancées et outils professionnels.",
+    "cta": "Obtenir DiveFive Premium",
+    "plans": {
+      "free": "Gratuit",
+      "premium": "Premium"
+    },
+    "benefits": [
+      "Analyses avancées",
+      "Filtres puissants",
+      "Exports pro",
+      "Support prioritaire",
+      "Plus de sites et de matériel",
+      "Synchronisation cloud à venir"
+    ]
+  },
+  "pressKit": {
+    "title": "Kit presse",
+    "brand": {
+      "heading": "Références de marque",
+      "appName": "Nom de l’app",
+      "bundleId": "Bundle ID",
+      "website": "Site web",
+      "supportEmail": "E-mail support",
+      "privacyUrl": "Politique de confidentialité",
+      "supportUrl": "URL de support",
+      "marketingUrl": "Site marketing"
+    },
+    "meta": {
+      "heading": "Métadonnées App Store",
+      "subtitle": "Sous-titre",
+      "promo": "Texte promotionnel",
+      "keywords": "Mots-clés (séparés par des virgules)",
+      "description": "Description",
+      "releaseNotes": "Notes de version"
+    },
+    "assets": {
+      "heading": "Ressources de marque",
+      "logo": "Logo principal (PNG)",
+      "usage": "Guide d’utilisation",
+      "usageText": "Utilisez toujours DiveFive avec un F majuscule. Respectez les marges, ne déformez pas et évitez les couleurs non autorisées."
+    }
+  },
+  "brandData": {
+    "appName": "DiveFive",
+    "bundleId": "app.dive55.ios",
+    "website": "https://divefive.app",
+    "supportEmail": "support@divefive.app",
+    "privacyUrl": "https://divefive.app/privacy",
+    "supportUrl": "https://divefive.app/support",
+    "marketingUrl": "https://divefive.app"
+  },
+  "storeMeta": {
+    "subtitle": "Journal de plongée professionnel",
+    "promo": "Application de journal de plongée créée par des plongeurs. Suivez vos aventures sous-marines avec des analyses, un suivi sécurité et une gestion des sites. Parfaite pour tous les plongeurs.",
+    "keywords": "plongée sous-marine,journal de plongée,logbook,ordinateur de plongée,sites de plongée,PADI,sécurité de plongée,SSI,oceanic,plunge"
+  },
+  "legal": {
+    "privacy": "Confidentialité",
+    "terms": "Conditions"
+  },
+  "faq": {
+    "title": "Foire aux questions"
+  },
+  "featuresPage": {
+    "title": "Fonctionnalités"
+  },
+  "gallery": {
+    "open": "Ouvrir la galerie",
+    "close": "Fermer la galerie",
+    "next": "Capture suivante",
+    "prev": "Capture précédente",
+    "zoom": "Basculer le zoom"
+  }
+}

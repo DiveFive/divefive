@@ -1,5 +1,6 @@
-<script setup>
+<script setup lang="ts">
 import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 const props = defineProps({
   items: { type: Array, default: () => [] }
@@ -8,6 +9,7 @@ const props = defineProps({
 const current = ref(0)
 const open = ref(false)
 const zoom = ref(false)
+const { t } = useI18n()
 
 function show(index) {
   current.value = index
@@ -51,11 +53,40 @@ onBeforeUnmount(() => window.removeEventListener('keydown', handleKey))
       </div>
     </div>
 
-    <div v-if="open" class="fixed inset-0 bg-black/80 flex items-center justify-center z-50">
-      <button class="absolute top-4 right-4 text-white text-2xl" @click="close">{{ items[current].close || '×' }}</button>
-      <button class="absolute left-4 text-white text-2xl" @click="prev">‹</button>
-      <img :src="items[current].src" :alt="items[current].alt" class="max-h-full max-w-full transition-transform" :class="zoom ? 'scale-150' : ''" @click="toggleZoom" />
-      <button class="absolute right-4 text-white text-2xl" @click="next">›</button>
+    <div v-if="open" class="fixed inset-0 z-50 flex items-center justify-center bg-black/80">
+      <button
+        class="absolute right-4 top-4 text-2xl text-white"
+        type="button"
+        :aria-label="t('gallery.close')"
+        @click="close"
+      >
+        {{ items[current].close || '×' }}
+      </button>
+      <button
+        class="absolute left-4 text-2xl text-white"
+        type="button"
+        :aria-label="t('gallery.prev')"
+        @click="prev"
+      >
+        ‹
+      </button>
+      <img
+        :src="items[current].src"
+        :alt="items[current].alt"
+        class="max-h-full max-w-full transition-transform"
+        :class="zoom ? 'scale-150' : ''"
+        :aria-label="t('gallery.zoom')"
+        role="img"
+        @click="toggleZoom"
+      />
+      <button
+        class="absolute right-4 text-2xl text-white"
+        type="button"
+        :aria-label="t('gallery.next')"
+        @click="next"
+      >
+        ›
+      </button>
     </div>
   </div>
 </template>

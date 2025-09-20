@@ -1,76 +1,102 @@
-<script setup>
-import { useI18n } from "vue-i18n";
-import { defineComponent, computed } from "vue";
-import AppStoreButton from "@/components/AppStoreButton.vue";
-import ShowcaseSection from "@/components/ShowcaseSection.vue";
+<script setup lang="ts">
+import { computed, defineComponent, onMounted, ref, watch } from 'vue'
+import { useI18n } from 'vue-i18n'
 
-import logo from "@/assets/images/logo.png";
-import imgAdd from "@/assets/images/AddNewDive.png";
-import imgList from "@/assets/images/DiveLogList.png";
-import imgDetail from "@/assets/images/DiveDetail.png";
-import imgSite from "@/assets/images/DiveSiteDetail.png";
+import AppStoreBadge from '@/components/AppStoreBadge.vue'
+import ShowcaseSection from '@/components/ShowcaseSection.vue'
+import logo from '@/assets/images/logo.png'
+import imgAdd from '@/assets/images/AddNewDive.png'
+import imgList from '@/assets/images/DiveLogList.png'
+import imgDetail from '@/assets/images/DiveDetail.png'
+import imgSite from '@/assets/images/DiveSiteDetail.png'
+import { loadContent } from '@/util/fetchContent'
 
-const { t, tm } = useI18n();
+const { t, tm, locale } = useI18n()
 
-// Iconos
+const heroDescription = ref('')
+const screenshots = ref<Array<{ file: string; alt: string }>>([])
+
+const fetchContent = async () => {
+  const data = await loadContent('appcopy', locale.value)
+  const copy = data ?? {}
+  const screenData = await loadContent('screenshots', locale.value)
+  screenshots.value = Array.isArray(screenData) ? screenData : []
+  heroDescription.value = copy.heroDescription?.body ?? ''
+}
+
+onMounted(fetchContent)
+watch(() => locale.value, fetchContent)
+
+const features = computed(() => tm('features.items'))
+const premiumBenefits = computed(() => tm('premium.benefits'))
+
+const fallbackScreens = computed(() => [
+  { src: imgAdd, caption: t('screens.add') },
+  { src: imgList, caption: t('screens.list') },
+  { src: imgDetail, caption: t('screens.detail') },
+  { src: imgSite, caption: t('screens.site') },
+])
+
+const localizedScreens = computed(() => {
+  const merged = [...fallbackScreens.value]
+  screenshots.value.forEach((item, index) => {
+    merged[index] = {
+      src: item.file,
+      caption: item.alt || fallbackScreens.value[index]?.caption || t('screens.title'),
+    }
+  })
+  return merged
+})
+
+const shots1 = computed(() => localizedScreens.value.slice(0, 2))
+const shots2 = computed(() => localizedScreens.value.slice(2, 4))
+
 const Icon = defineComponent({
-  props: { name: String },
+  props: { name: { type: String, required: true } },
   template: `
     <svg v-if="name==='notebook'" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M6 4a2 2 0 0 0-2 2v13h2l2-1 2 1 2-1 2 1 2-1 2 1h2V6a2 2 0 0 0-2-2H6Zm2 4h8v2H8V8Zm0 4h8v2H8v-2Z"/></svg>
     <svg v-else-if="name==='sync'" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2a10 10 0 1 0 9.54 6.8h-2.1A8 8 0 1 1 4 12H1l4 4 4-4H6a6 6 0 1 0 5.72-7.95l.78-1.95A8 8 0 0 1 20 12h3l-4 4-4-4h2a6 6 0 1 0-5.68-8Z"/></svg>
     <svg v-else-if="name==='map'" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M9 3 3 5v14l6-2 6 2 6-2V3l-6 2-6-2Zm0 2.62v12.76l6 1.99V7.62L9 5.62Z"/></svg>
     <svg v-else-if="name==='stats'" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 24 24"><path d="M4 20h16v-2H4v2Zm2-4h3V7H6v9Zm5 0h3V4h-3v12Zm5 0h3V10h-3v6Z"/></svg>
   `,
-});
+})
 
-// Reactivo al idioma
-const features = computed(() => tm("features.items"));
-const premiumBenefits = computed(() => tm("premium.benefits"));
+const onCtaHover = (event: MouseEvent) => {
+  (event.currentTarget as HTMLButtonElement).style.backgroundColor = '#002A55'
+}
 
-// Textos en arrays (reactivos a idioma)
-const shots1 = computed(() => [
-  { src: imgAdd, caption: t("screens.add") },
-  { src: imgList, caption: t("screens.list") },
-]);
-const shots2 = computed(() => [
-  { src: imgDetail, caption: t("screens.detail") },
-  { src: imgSite, caption: t("screens.site") },
-]);
+const onCtaLeave = (event: MouseEvent) => {
+  (event.currentTarget as HTMLButtonElement).style.backgroundColor = 'var(--brand-primary)'
+}
 </script>
 
 <template>
   <div>
-    <!-- Hero -->
-    <section
-      class="text-center py-20 bg-white text-[#111827] dark:bg-[color:#0A0A0A] dark:text-[color:#F3F4F6]"
-    >
-      <h1 class="text-5xl font-bold mb-4">{{ t("hero.title") }}</h1>
-      <h2 class="text-2xl text-gray-600 dark:text-[color:#D1D5DB] mb-4">
-        {{ t("hero.subtitle") }}
+    <section class="bg-white py-20 text-center text-[#111827] dark:bg-[color:#0A0A0A] dark:text-[color:#F3F4F6]">
+      <h1 class="mb-4 text-5xl font-bold">{{ t('hero.title') }}</h1>
+      <h2 class="mb-4 text-2xl text-gray-600 dark:text-[color:#D1D5DB]">
+        {{ t('hero.subtitle') }}
       </h2>
-      <img :src="logo" alt="DiveFive logo" class="mx-auto h-56 mb-7" />
-      <AppStoreButton class="mb-12" />
+      <img :src="logo" :alt="t('app.name')" class="mx-auto mb-7 h-56" />
+      <AppStoreBadge class="mx-auto mb-10 h-12 w-auto" />
       <p
-        class="text-lg mb-6 max-w-2xl mx-auto text-gray-700 dark:text-[color:#D1D5DB]"
-      >
-        {{ t("hero.description") }}
-      </p>
+        class="mx-auto max-w-2xl whitespace-pre-line text-lg text-gray-700 dark:text-[color:#D1D5DB]"
+        v-text="heroDescription"
+      />
     </section>
 
-    <!-- Features -->
-    <section class="py-16 bg-[color:var(--surface)]">
-      <h2 class="text-3xl font-semibold text-center mb-12">
-        {{ t("features.title") }}
+    <section class="bg-[color:var(--surface)] py-16">
+      <h2 class="mb-12 text-center text-3xl font-semibold">
+        {{ t('features.title') }}
       </h2>
-      <div class="max-w-5xl mx-auto grid md:grid-cols-4 gap-8 px-4">
+      <div class="mx-auto grid max-w-5xl gap-8 px-4 md:grid-cols-4">
         <div v-for="(f, idx) in features" :key="idx" class="text-center">
-          <!-- Ícono: usa color de marca primario -->
           <Icon
             :name="f.icon"
-            class="h-12 w-12 mx-auto mb-4"
+            class="mx-auto mb-4 h-12 w-12"
             style="color: var(--brand-primary)"
           />
-          <h3 class="font-semibold mb-2" style="color: var(--brand-primary)">
+          <h3 class="mb-2 font-semibold" style="color: var(--brand-primary)">
             {{ f.title }}
           </h3>
           <p class="text-sm text-[color:var(--content-secondary)]">
@@ -80,69 +106,40 @@ const shots2 = computed(() => [
       </div>
     </section>
 
-    <!-- Showcase 1 (claro) -->
     <ShowcaseSection
-      :title="
-        t('showcase.wallpapersTitle', 'Focused logging, beautiful visuals')
-      "
-      :description="
-        t(
-          'showcase.wallpapersDesc',
-          'Log dives, coordinate maps and keep your data clean and professional.'
-        )
-      "
+      :title="t('showcase.wallpapersTitle')"
+      :description="t('showcase.wallpapersDesc')"
       tone="light"
       :shots="shots1"
     />
 
-    <!-- Showcase 2 (claro o invertido) -->
     <ShowcaseSection
-      :title="
-        t('showcase.superchargeTitle', 'Supercharge your diving workflow')
-      "
-      :description="
-        t(
-          'showcase.superchargeDesc',
-          'Review dive details and sites to improve with every session.'
-        )
-      "
+      :title="t('showcase.superchargeTitle')"
+      :description="t('showcase.superchargeDesc')"
       tone="light"
       :reversed="true"
       :shots="shots2"
     />
 
-    <!-- Premium (integrado en Home) -->
-    <section
-      id="premium"
-      class="py-20 bg-white text-[#111827] dark:bg-[color:#0A0A0A] dark:text-[color:#F3F4F6]"
-    >
-      <div class="max-w-4xl mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-3">
-          {{ t("premium.title") }}
+    <section id="premium" class="bg-white py-20 text-[#111827] dark:bg-[color:#0A0A0A] dark:text-[color:#F3F4F6]">
+      <div class="mx-auto max-w-4xl px-6">
+        <h2 class="mb-3 text-center text-3xl font-bold">
+          {{ t('premium.title') }}
         </h2>
-        <p class="text-center text-gray-600 dark:text-[color:#D1D5DB] mb-10">
-          {{ t("premium.subtitle") }}
+        <p class="mb-10 text-center text-gray-600 dark:text-[color:#D1D5DB]">
+          {{ t('premium.subtitle') }}
         </p>
 
-        <!-- Tabla responsive -->
-        <div
-          class="overflow-x-auto rounded-xl border border-gray-200 dark:border-[color:#1F2937] bg-white dark:bg-[color:#141414]"
-        >
+        <div class="overflow-x-auto rounded-xl border border-gray-200 bg-white dark:border-[color:#1F2937] dark:bg-[color:#141414]">
           <table class="w-full border-collapse text-left">
             <thead class="bg-gray-50 dark:bg-[color:#141414]">
               <tr class="border-b border-gray-200 dark:border-[color:#1F2937]">
-                <th
-                  class="p-3 text-sm font-semibold text-gray-600 dark:text-[color:#D1D5DB]"
-                ></th>
-                <th
-                  class="p-3 text-center text-sm font-semibold text-gray-600 dark:text-[color:#D1D5DB]"
-                >
-                  Free
+                <th class="p-3 text-sm font-semibold text-gray-600 dark:text-[color:#D1D5DB]"></th>
+                <th class="p-3 text-center text-sm font-semibold text-gray-600 dark:text-[color:#D1D5DB]">
+                  {{ t('premium.plans.free') }}
                 </th>
-                <th
-                  class="p-3 text-center text-sm font-semibold text-gray-600 dark:text-[color:#D1D5DB]"
-                >
-                  Premium
+                <th class="p-3 text-center text-sm font-semibold text-gray-600 dark:text-[color:#D1D5DB]">
+                  {{ t('premium.plans.premium') }}
                 </th>
               </tr>
             </thead>
@@ -150,7 +147,7 @@ const shots2 = computed(() => [
               <tr
                 v-for="(b, idx) in premiumBenefits"
                 :key="idx"
-                class="border-b last:border-0 border-gray-200 dark:border-[color:#1F2937]"
+                class="border-b border-gray-200 last:border-0 dark:border-[color:#1F2937]"
               >
                 <td class="p-3 text-gray-800 dark:text-[color:#F3F4F6]">
                   {{ b }}
@@ -162,23 +159,21 @@ const shots2 = computed(() => [
           </table>
         </div>
 
-        <!-- CTA -->
-        <div class="text-center mt-8">
-          <!-- Primario light: #003366 / hover #002A55 | dark: #0099FF / hover #0086E6 -->
+        <div class="mt-8 text-center">
           <button
-            class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-[color:#003366] text-white hover:bg-[color:#002A55] dark:bg-[color:#0099FF] dark:hover:bg-[color:#0086E6] font-medium transition"
+            class="inline-flex items-center justify-center rounded-xl px-6 py-3 font-medium text-white transition"
+            style="background-color: var(--brand-primary)"
+            @mouseover="onCtaHover"
+            @mouseleave="onCtaLeave"
           >
-            {{ t("premium.cta") }}
+            {{ t('premium.cta') }}
           </button>
-          <!-- O AppStoreButton si prefieres -->
-          <!-- <AppStoreButton class="mt-4" /> -->
         </div>
       </div>
     </section>
 
-    <!-- CTA final -->
-    <section class="text-center py-16 bg-white dark:bg-[color:#0A0A0A]">
-      <AppStoreButton />
+    <section class="bg-white py-16 text-center dark:bg-[color:#0A0A0A]">
+      <AppStoreBadge class="mx-auto h-12 w-auto" />
     </section>
   </div>
 </template>

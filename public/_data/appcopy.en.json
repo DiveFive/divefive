@@ -1,0 +1,20 @@
+{
+  "faq": {
+    "body": "Frequently Asked Questions\n\nWhich devices does DiveFive support?\nDiveFive supports iPhone and Apple Watch with iOS 17 or later.\n\nCan I export my data?\nYes, export to UDDF, CSV, and PDF with a single tap.\n"
+  },
+  "features": {
+    "body": "DiveFive Feature Overview\nDiveFive centralizes logging, analytics, and dive site planning in a single, easy-to-manage workspace built for professional divers.\n"
+  },
+  "heroDescription": {
+    "body": "DiveFive is the pro-grade logbook for divers who care about analytics, safety insights, and sharing detailed stories from every dive.\n"
+  },
+  "presskitIntro": {
+    "body": "Explore official messaging, assets, and metadata to cover DiveFive accurately across press, social, and the App Store.\n"
+  },
+  "releaseNotes": {
+    "body": "DiveFive 1.0\n- New pro logging dashboard with depth and temperature charts\n- Dive site manager with GPS and offline notes\n- HealthKit import for Apple Watch Ultra and compatible computers\n- Export to UDDF, CSV, and PDF logbooks\n- Accessibility and localization coverage for English, Spanish (Mexico), and French\n"
+  },
+  "storeDescription": {
+    "body": "DiveFive is the comprehensive dive logging companion for divers who want precise history, actionable analytics, and a beautiful record of every immersion.\n\nHighlights:\n• Complete dive logging with profiles, gear, and buddy tracking\n• Import from Apple Watch and UDDF-compatible computers\n• Personal dive site database with maps, notes, and ratings\n• Analytics to track depth, time, safety stops, and progress\n• Shareable exports for certification agencies and coaches\n\nDesigned by divers, DiveFive keeps your adventures organized, insightful, and ready for the next descent.\n"
+  }
+}

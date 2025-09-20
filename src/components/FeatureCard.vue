@@ -1,5 +1,6 @@
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue'
+import { useI18n } from 'vue-i18n'
 
 const props = defineProps({
   title: { type: String, required: true },
@@ -8,6 +9,7 @@ const props = defineProps({
 })
 
 const errored = ref(false)
+const { t } = useI18n()
 </script>
 
 <template>
@@ -18,7 +20,7 @@ const errored = ref(false)
            focus-within:-translate-y-1 focus-within:shadow-xl focus-within:border-cyan-400/60
            backdrop-blur will-change-transform"
     tabindex="0"
-    aria-label="Feature card"
+    :aria-label="t('app.aria.featureCard')"
   >
     <!-- Glow sutil al hover -->
     <div
