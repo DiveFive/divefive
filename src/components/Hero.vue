@@ -1,16 +1,30 @@
 <script setup>
-import BuceoImage from "@/assets/images/BuceoImage.png";
+import { useI18n } from 'vue-i18n'
+import BuceoImage from '@/assets/images/BuceoImage.png'
 
+const { t } = useI18n()
 </script>
 
 <template>
-  <section class="relative text-white text-center py-20 overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-b from-cyan-900 to-cyan-600"></div>
-    <img :src="BuceoImage" alt="" class="absolute inset-0 w-full h-full object-cover opacity-40" @error="e=>e.target.style.display='none'" />
-    <div class="relative z-10 max-w-2xl mx-auto px-4">
-      <h1 class="text-4xl md:text-5xl font-bold mb-4">DiveFive — your smart dive log</h1>
-      <p class="mb-6">iOS dive app that lets you record dives, import Apple Watch and UDDF data, map sites, and track stats.</p>
-      <button class="bg-blue-600 text-white px-6 py-3 rounded">Download on App Store</button>
+  <section class="relative overflow-hidden py-20 text-center text-[color:var(--color-actionOnPrimary)]">
+    <div class="absolute inset-0 bg-[color:var(--color-brandPrimary)]" aria-hidden="true"></div>
+    <img
+      :src="BuceoImage"
+      :alt="t('hero.backgroundAlt')"
+      class="absolute inset-0 h-full w-full object-cover opacity-40"
+      @error="e=>e.target.style.display='none'"
+    />
+    <div class="relative z-10 mx-auto max-w-2xl px-4">
+      <h1 class="mb-4 text-4xl font-bold md:text-5xl">{{ t('legacyHero.title') }}</h1>
+      <p class="mb-6 text-[color:var(--color-actionOnPrimary)]/80">
+        {{ t('legacyHero.description') }}
+      </p>
+      <button
+        type="button"
+        class="inline-flex items-center justify-center rounded-xl bg-[color:var(--color-actionSecondary)] px-6 py-3 text-sm font-medium text-[color:var(--color-brandPrimary)] transition hover:bg-[color:var(--color-actionSecondaryHover)]"
+      >
+        {{ t('legacyHero.cta') }}
+      </button>
     </div>
   </section>
 </template>

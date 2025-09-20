@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "manifests": "node ./scripts/build-manifests.mjs",
+    "i18n:report": "node ./scripts/generate-i18n-report.mjs"
   },
   "dependencies": {
     "swiper": "^11.2.10",

@@ -1,0 +1,24 @@
+:root {
+  background-color: var(--color-backgroundPrimary);
+}
+
+body {
+  background-color: var(--color-backgroundPrimary);
+  color: var(--color-contentPrimary);
+  transition: background-color 180ms ease, color 180ms ease;
+}
+
+#app {
+  min-height: 100vh;
+  background-color: var(--color-backgroundPrimary);
+  color: var(--color-contentPrimary);
+}
+
+::selection {
+  background: rgba(0, 102, 204, 0.2);
+  color: inherit;
+}
+
+:root[data-theme='dark'] ::selection {
+  background: rgba(0, 153, 255, 0.35);
+}

@@ -1,0 +1,1 @@
+¡Bienvenido a DiveFive! Esta versión incluye la plataforma completa de registro con importación desde HealthKit, soporte UDDF, analíticas avanzadas y monitoreo de seguridad diseñado por buzos para buzos.

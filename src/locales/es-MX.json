@@ -1,4 +1,7 @@
 {
+  "brand": {
+    "name": "DiveFive"
+  },
   "nav": {
     "home": "Inicio",
     "premium": "Premium",
@@ -10,7 +13,14 @@
     "title": "DiveFive",
     "subtitle": "Conviértete en un mejor buzo.",
     "cta": "Descargar en App Store",
+    "logoAlt": "Logotipo de DiveFive",
+    "backgroundAlt": "Buzos nadando en un agua azul",
     "description": "Aplicación profesional de registro de inmersiones hecha por buzos, para buzos. Registra tus aventuras bajo el agua con analíticas, monitoreo de seguridad y gestión de sitios de buceo. Perfecta para todos los niveles."
+  },
+  "legacyHero": {
+    "title": "DiveFive — tu bitácora inteligente",
+    "description": "Registra inmersiones, importa datos de Apple Watch y UDDF, mapea sitios y sigue estadísticas clave en cada sesión.",
+    "cta": "Descargar en App Store"
   },
   "features": {
     "title": "Lo que DiveFive puede hacer por ti",
@@ -21,13 +31,20 @@
       { "title": "Analiza y mejora", "desc": "Tendencias y estadísticas para un mejor buceo.", "icon": "stats" }
     ]
   },
+  "showcase": {
+    "wallpapersTitle": "Registro enfocado, visuales impecables",
+    "wallpapersDesc": "Registra inmersiones, coordina mapas y mantén tus datos claros y profesionales.",
+    "superchargeTitle": "Potencia tu flujo de trabajo de buceo",
+    "superchargeDesc": "Revisa detalles y sitios para mejorar con cada inmersión."
+  },
   "screens": {
     "title": "Capturas de pantalla",
     "add": "Añadir nueva inmersión",
     "list": "Lista de inmersiones",
     "detail": "Detalle de inmersión",
     "site": "Detalle del sitio de buceo",
-    "close": "Cerrar"
+    "close": "Cerrar",
+    "lightboxLabel": "Galería de capturas de DiveFive"
   },
   "premium": {
     "title": "DiveFive Premium",
@@ -41,6 +58,28 @@
       "Más sitios y equipo",
       "Futura sincronización en la nube"
     ]
+  },
+  "pricing": {
+    "plans": {
+      "free": "Gratis",
+      "premium": "Premium"
+    }
+  },
+  "steps": {
+    "title": "Cómo funciona",
+    "subtitle": "Tres pasos sencillos para convertir cada inmersión en aprendizaje.",
+    "listLabel": "Pasos de DiveFive",
+    "stepLabel": "Paso {index}",
+    "items": [
+      "Registra tu inmersión",
+      "Añade ubicación y detalles",
+      "Analiza tus estadísticas"
+    ]
+  },
+  "carousel": {
+    "close": "Cerrar",
+    "previous": "Captura anterior",
+    "next": "Siguiente captura"
   },
   "pressKit": {
     "title": "Kit de Prensa",
@@ -90,5 +129,25 @@
     "keywords": "buceo,registro de buceo,logbook,computadora de buceo,sitios de buceo,PADI,seguridad de buceo,SSI,oceanic,plunge",
     "description": "DiveFive es la aplicación integral de registro de inmersiones diseñada para buzos serios que quieren registrar, analizar y mejorar su rendimiento bajo el agua.\n\nFUNCIONES CLAVE:\n\nREGISTRO COMPLETO DE INMERSIONES\n• Registra datos esenciales: profundidad, duración, temperatura, visibilidad\n• Controla tu equipo y mezclas de gas\n• Guarda sitios de buceo con coordenadas GPS\n• Añade notas y calificaciones detalladas\n\nANALÍTICAS AVANZADAS\n• Vista general de tu carrera con número total de inmersiones y tiempo en el fondo\n• Sigue tu inmersión más profunda y tu progreso\n• Analiza patrones y tendencias\n• Estadísticas de seguridad y seguimiento de finalización\n\nGESTIÓN DE SITIOS DE BUCEO\n• Mapas interactivos con ubicaciones de sitios\n• Construye tu base de datos personal de sitios\n• Busca y descubre nuevos lugares\n• Analíticas e historial por sitio\n\nIMPORTACIÓN Y EXPORTACIÓN DE DATOS\n• Importa datos de computadoras de buceo (formato UDDF)\n• Exporta tus registros como respaldo\n• Migración y compartición de datos sencilla\n\nSOPORTE MULTI-IDIOMA\n• Disponible en inglés y español\n• Localizado para comunidades de buceo en todo el mundo\n\nDISEÑADA POR BUZOS, PARA BUZOS\nDiveFive se centra en lo más importante para los entusiastas del buceo: registro detallado, monitoreo de seguridad y ayudarte a convertirte en mejor buzo a través del análisis.\n\nYa seas un buzo recreativo registrando viajes de fin de semana o un buzo técnico con perfiles complejos, DiveFive te da las herramientas confiables que necesitas para mantener un registro detallado.\n\nComienza tu viaje de buceo con DiveFive y lleva tu bitácora al formato digital.",
     "releaseNotes": "🎉 ¡Bienvenido a DiveFive!\n\nEsta versión incluye:\n\nNUEVAS FUNCIONES:\n• Sistema completo de registro de inmersiones con profundidad, temperatura y duración\n• Panel interactivo con estadísticas de tu carrera\n• Gestión de sitios de buceo con GPS y mapas\n• Analíticas avanzadas y monitoreo de seguridad\n• Soporte multi-idioma (inglés y español)\n\nMEJORAS:\n• Rendimiento optimizado para grandes colecciones de inmersiones\n• Validación de datos y manejo de errores mejorado\n• Accesibilidad y experiencia de usuario mejorada\n• Mejor funcionalidad offline\n\nTÉCNICO:\n• Importación de datos UDDF desde computadoras de buceo\n• Monitoreo robusto de integridad de datos\n• Flexibilidad de sistema métrico/imperial\n• Capacidades profesionales de exportación de datos\n\n¿Listo para sumergirte? 🤿"
+  },
+  "language": {
+    "labels": {
+      "en": "EN",
+      "esMX": "ES",
+      "fr": "FR"
+    },
+    "switcherLabel": "Cambiar idioma"
+  },
+  "appStore": {
+    "badgeAlt": "Descarga DiveFive en App Store",
+    "badgeAria": "Abrir DiveFive en App Store"
+  },
+  "content": {
+    "loading": "Cargando…",
+    "error": "El contenido no está disponible en este momento."
+  },
+  "footer": {
+    "copyright": "© {year} DiveFive. Todos los derechos reservados.",
+    "tagline": "Bitácoras profesionales para buzos."
   }
 }

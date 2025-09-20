@@ -1,0 +1,42 @@
+{
+  "privacy": {
+    "en": [
+      "DiveFive respects your privacy and only collects the data necessary to deliver a reliable dive logging experience. We store profile details, logged dives, equipment notes, and support conversations so that you can synchronize your information across devices and receive timely help when needed.",
+      "We do not sell or rent personal information to third parties. Analytics are aggregated and anonymized to understand feature performance, prioritize improvements, and ensure DiveFive remains fast and dependable for every diver.",
+      "You can request a data export or deletion at any time by contacting support@divefive.app. We respond to all requests within 30 days and remove your information from production systems as soon as the request is completed.",
+      "This policy is governed by the laws of the United States. Any updates will be published on divefive.app, and continued use of the service indicates acceptance of the revised terms."
+    ],
+    "es-MX": [
+      "DiveFive respeta tu privacidad y solo recopila los datos necesarios para ofrecer una bitácora confiable. Guardamos tu perfil, las inmersiones registradas, notas de equipo y conversaciones de soporte para que puedas sincronizar tu información entre dispositivos y recibir ayuda cuando la necesites.",
+      "No vendemos ni rentamos información personal a terceros. Las analíticas se agregan y anonimizan para entender el desempeño de las funciones, priorizar mejoras y asegurar que DiveFive siga siendo rápido y estable para cada buzo.",
+      "Puedes solicitar la exportación o eliminación de tus datos en cualquier momento escribiendo a support@divefive.app. Respondemos a todas las solicitudes en un máximo de 30 días y eliminamos la información de los sistemas de producción tan pronto como se completa el proceso.",
+      "Esta política se rige por las leyes de Estados Unidos. Cualquier actualización se publicará en divefive.app y el uso continuo del servicio implica la aceptación de los cambios."
+    ],
+    "fr": [
+      "DiveFive respecte votre vie privée et ne collecte que les données nécessaires pour offrir un journal de plongée fiable. Nous conservons votre profil, les plongées enregistrées, les notes d’équipement et les échanges de support afin que vous puissiez synchroniser vos informations entre vos appareils et recevoir une aide rapide.",
+      "Nous ne vendons ni ne louons vos informations personnelles à des tiers. Les analyses sont agrégées et anonymisées pour comprendre les performances des fonctionnalités, prioriser les améliorations et garantir que DiveFive reste rapide et stable pour chaque plongeur.",
+      "Vous pouvez demander l’exportation ou la suppression de vos données à tout moment en écrivant à support@divefive.app. Nous répondons à toutes les demandes sous 30 jours et supprimons les informations de nos systèmes de production dès que le traitement est finalisé.",
+      "Cette politique est régie par les lois des États-Unis. Toute mise à jour sera publiée sur divefive.app et l’utilisation continue du service vaut acceptation des nouvelles conditions."
+    ]
+  },
+  "terms": {
+    "en": [
+      "By downloading or using DiveFive you agree to these terms. DiveFive grants you a personal, non-transferable license to use the app for tracking scuba dives, managing equipment, and accessing insights provided through the service.",
+      "You are responsible for ensuring your account credentials remain secure and for all activity that occurs within the app. DiveFive may suspend access if suspicious or abusive behavior is detected, or if payment obligations for premium features are not met.",
+      "DiveFive is provided “as is” without warranties. We are not responsible for injuries or losses that occur during diving activities. Always follow local regulations, training agency guidance, and your certified limits when planning dives.",
+      "These terms are governed by the laws of the United States. Disputes will be resolved through binding arbitration in California, unless a different jurisdiction is required by law. Updates to these terms will be posted on divefive.app."
+    ],
+    "es-MX": [
+      "Al descargar o usar DiveFive aceptas estos términos. DiveFive te otorga una licencia personal e intransferible para usar la app y registrar inmersiones, administrar equipo y acceder a los análisis disponibles en el servicio.",
+      "Eres responsable de mantener seguras tus credenciales y toda actividad realizada en tu cuenta. DiveFive puede suspender el acceso si detecta comportamientos sospechosos o abusivos, o si no se cumplen los pagos de las funciones Premium.",
+      "DiveFive se proporciona “tal cual” sin garantías. No nos hacemos responsables de lesiones o pérdidas ocurridas durante actividades de buceo. Sigue siempre la normativa local, las indicaciones de tu agencia de entrenamiento y tus límites certificados al planear inmersiones.",
+      "Estos términos se rigen por las leyes de Estados Unidos. Las disputas se resolverán mediante arbitraje vinculante en California, a menos que la ley requiera otra jurisdicción. Cualquier actualización se publicará en divefive.app."
+    ],
+    "fr": [
+      "En téléchargeant ou en utilisant DiveFive, vous acceptez ces conditions. DiveFive vous accorde une licence personnelle et non transférable pour utiliser l’application, consigner vos plongées, gérer votre équipement et accéder aux analyses fournies par le service.",
+      "Vous êtes responsable de la sécurité de vos identifiants et de toute activité réalisée dans votre compte. DiveFive peut suspendre l’accès en cas de comportement suspect ou abusif, ou si les paiements des fonctions Premium ne sont pas réglés.",
+      "DiveFive est fourni « tel quel » sans garantie. Nous ne sommes pas responsables des blessures ou pertes survenues lors de vos activités de plongée. Respectez toujours la réglementation locale, les recommandations de votre agence de formation et vos limites certifiées lors de la planification de plongées.",
+      "Ces conditions sont régies par les lois des États-Unis. Les litiges seront résolus par arbitrage contraignant en Californie, sauf si une autre juridiction est requise par la loi. Toute mise à jour sera publiée sur divefive.app."
+    ]
+  }
+}

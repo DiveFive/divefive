@@ -1,0 +1,56 @@
+{
+  "en": [
+    {
+      "asset": "@/assets/images/AddNewDive.png",
+      "captionKey": "screens.add"
+    },
+    {
+      "asset": "@/assets/images/DiveLogList.png",
+      "captionKey": "screens.list"
+    },
+    {
+      "asset": "@/assets/images/DiveDetail.png",
+      "captionKey": "screens.detail"
+    },
+    {
+      "asset": "@/assets/images/DiveSiteDetail.png",
+      "captionKey": "screens.site"
+    }
+  ],
+  "es-MX": [
+    {
+      "asset": "@/assets/images/AddNewDive.png",
+      "captionKey": "screens.add"
+    },
+    {
+      "asset": "@/assets/images/DiveLogList.png",
+      "captionKey": "screens.list"
+    },
+    {
+      "asset": "@/assets/images/DiveDetail.png",
+      "captionKey": "screens.detail"
+    },
+    {
+      "asset": "@/assets/images/DiveSiteDetail.png",
+      "captionKey": "screens.site"
+    }
+  ],
+  "fr": [
+    {
+      "asset": "@/assets/images/AddNewDive.png",
+      "captionKey": "screens.add"
+    },
+    {
+      "asset": "@/assets/images/DiveLogList.png",
+      "captionKey": "screens.list"
+    },
+    {
+      "asset": "@/assets/images/DiveDetail.png",
+      "captionKey": "screens.detail"
+    },
+    {
+      "asset": "@/assets/images/DiveSiteDetail.png",
+      "captionKey": "screens.site"
+    }
+  ]
+}

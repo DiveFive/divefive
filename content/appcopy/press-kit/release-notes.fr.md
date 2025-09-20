@@ -1,0 +1,1 @@
+Bienvenue sur DiveFive ! Cette version inclut la plateforme complète de journal avec import HealthKit, prise en charge UDDF, analyses avancées et suivi de sécurité conçu par des plongeurs pour des plongeurs.

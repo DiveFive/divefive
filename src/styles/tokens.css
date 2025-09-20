@@ -1,0 +1,57 @@
+:root {
+  color-scheme: light;
+  --color-backgroundPrimary: #f9fafb;
+  --color-surfacePrimary: #ffffff;
+  --color-surfaceSecondary: #f3f4f6;
+  --color-surfaceTertiary: #eef2f7;
+  --color-borderSubtle: #e5e7eb;
+  --color-borderStrong: #d1d5db;
+  --color-contentPrimary: #111827;
+  --color-contentSecondary: #4b5563;
+  --color-contentMuted: #6b7280;
+  --color-brandPrimary: #003366;
+  --color-brandPrimaryHover: #002a55;
+  --color-brandAccent: #ff6600;
+  --color-brandAccentStrong: #cc5200;
+  --color-actionPrimary: #003366;
+  --color-actionPrimaryHover: #002a55;
+  --color-actionOnPrimary: #ffffff;
+  --color-actionSecondary: #ffffff;
+  --color-actionSecondaryHover: #f3f4f6;
+  --color-focusRing: rgba(0, 102, 204, 0.45);
+  --color-elevatedRing: rgba(15, 23, 42, 0.12);
+  --shadow-soft: 0 12px 24px -12px rgba(15, 23, 42, 0.25);
+  --shadow-elevated: 0 18px 32px -12px rgba(15, 23, 42, 0.32);
+  --overlay-scrim: rgba(17, 24, 39, 0.7);
+  --badge-light: #000000;
+  --badge-dark: #ffffff;
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --color-backgroundPrimary: #0a0a0a;
+  --color-surfacePrimary: #101010;
+  --color-surfaceSecondary: #181818;
+  --color-surfaceTertiary: #1f1f1f;
+  --color-borderSubtle: #252525;
+  --color-borderStrong: #303030;
+  --color-contentPrimary: #f3f4f6;
+  --color-contentSecondary: #d1d5db;
+  --color-contentMuted: #9ca3af;
+  --color-brandPrimary: #0099ff;
+  --color-brandPrimaryHover: #0086e6;
+  --color-brandAccent: #ff8733;
+  --color-brandAccentStrong: #ff6a00;
+  --color-actionPrimary: #0099ff;
+  --color-actionPrimaryHover: #0086e6;
+  --color-actionOnPrimary: #0a0a0a;
+  --color-actionSecondary: #181818;
+  --color-actionSecondaryHover: #202020;
+  --color-focusRing: rgba(0, 153, 255, 0.55);
+  --color-elevatedRing: rgba(148, 163, 184, 0.2);
+  --shadow-soft: 0 16px 28px -16px rgba(0, 0, 0, 0.65);
+  --shadow-elevated: 0 22px 40px -16px rgba(0, 0, 0, 0.75);
+  --overlay-scrim: rgba(0, 0, 0, 0.75);
+  --badge-light: #ffffff;
+  --badge-dark: #000000;
+}

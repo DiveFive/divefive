@@ -1,0 +1,43 @@
+{
+  "pressKit": {
+    "intro": {
+      "en": [
+        "Everything you need to cover DiveFive. Official copy, core messaging, and usage notes aligned with the brand playbook."
+      ],
+      "es-MX": [
+        "Todo lo que necesitas para hablar de DiveFive. Copia oficial, mensajes clave y lineamientos alineados con la guía de marca."
+      ],
+      "fr": [
+        "Tout ce qu’il faut pour présenter DiveFive. Texte officiel, messages clés et consignes conformes au guide de marque."
+      ]
+    },
+    "releaseNotes": {
+      "en": [
+        "Welcome to DiveFive! This release includes the complete dive logging platform with HealthKit import, UDDF support, advanced analytics, and safety monitoring designed by divers for divers."
+      ],
+      "es-MX": [
+        "¡Bienvenido a DiveFive! Esta versión incluye la plataforma completa de registro con importación desde HealthKit, soporte UDDF, analíticas avanzadas y monitoreo de seguridad diseñado por buzos para buzos."
+      ],
+      "fr": [
+        "Bienvenue sur DiveFive ! Cette version inclut la plateforme complète de journal avec import HealthKit, prise en charge UDDF, analyses avancées et suivi de sécurité conçu par des plongeurs pour des plongeurs."
+      ]
+    },
+    "storeDescription": {
+      "en": [
+        "DiveFive is the comprehensive dive logging app designed for serious divers who want to track, analyze, and improve their underwater performance.",
+        "Key features:\n• Log essential dive data including depth, duration, temperature, visibility, equipment, and gas mixes.\n• Record dive sites with GPS coordinates and rich notes.\n• Import HealthKit and UDDF data for precise records across devices.\n• Analyze trends, safety metrics, and lifetime stats to stay sharp.",
+        "DiveFive keeps your logbook organized, auditable, and always ready for your next dive briefing."
+      ],
+      "es-MX": [
+        "DiveFive es la app integral de registro de inmersiones diseñada para buzos que desean seguir, analizar y mejorar su desempeño bajo el agua.",
+        "Funciones clave:\n• Registra datos esenciales como profundidad, duración, temperatura, visibilidad, equipo y mezclas de gas.\n• Guarda sitios de buceo con coordenadas GPS y notas detalladas.\n• Importa datos de HealthKit y UDDF para tener registros precisos en todos tus dispositivos.\n• Analiza tendencias, métricas de seguridad y estadísticas de carrera para mantenerte al día.",
+        "DiveFive mantiene tu bitácora organizada, auditada y lista para tu próximo briefing de buceo."
+      ],
+      "fr": [
+        "DiveFive est l’application complète de journal de plongée pensée pour les plongeurs exigeants qui souhaitent suivre, analyser et améliorer leurs performances sous-marines.",
+        "Fonctionnalités clés :\n• Consignez les données essentielles telles que profondeur, durée, température, visibilité, équipement et mélanges gazeux.\n• Enregistrez les sites de plongée avec coordonnées GPS et notes détaillées.\n• Importez vos données HealthKit et UDDF pour disposer d’archives précises sur tous vos appareils.\n• Analysez tendances, indicateurs de sécurité et statistiques de carrière pour rester affûté.",
+        "DiveFive garde votre carnet organisé, vérifiable et prêt pour votre prochain briefing de plongée."
+      ]
+    }
+  }
+}
