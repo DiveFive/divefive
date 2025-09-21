@@ -31,22 +31,11 @@ const isActive = (path: string) => route.path === path
 
 <template>
   <div class="flex min-h-screen flex-col bg-[color:var(--bg)] text-[color:var(--content-primary)]">
-    <header class="border-b border-[color:var(--border)] bg-[color:var(--surface)]">
+    <header class="bg-[color:var(--surface)]">
+      
       <div class="mx-auto flex max-w-5xl flex-col gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between">
-        <RouterLink to="/" class="flex items-center gap-3">
-          <img :src="logo" :alt="t('app.name')" class="h-8 w-auto" />
-          <span class="text-lg font-semibold text-[color:var(--content-primary)]">{{ t('app.name') }}</span>
-        </RouterLink>
         <nav class="hidden items-center gap-6 text-sm font-medium text-[color:var(--content-secondary)] sm:flex">
-          <RouterLink
-            v-for="link in headerLinks"
-            :key="link.to"
-            :to="link.to"
-            class="transition hover:text-[color:var(--content-primary)]"
-            :class="isActive(link.to) ? 'text-[color:var(--content-primary)]' : ''"
-          >
-            {{ link.label }}
-          </RouterLink>
+
         </nav>
         <LanguageMenu class="sm:ml-4" />
         <nav class="flex flex-wrap gap-4 text-sm font-medium text-[color:var(--content-secondary)] sm:hidden">
@@ -83,7 +72,6 @@ const isActive = (path: string) => route.path === path
           </RouterLink>
         </nav>
 
-        <LanguageMenu />
       </div>
     </footer>
   </div>
