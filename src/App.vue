@@ -46,8 +46,8 @@ const isActive = (path: string) => route.path === path
           >
             {{ link.label }}
           </RouterLink>
+          <LanguageMenu class="ml-4" />
         </nav>
-        <LanguageMenu class="sm:ml-4" />
         <nav class="flex flex-wrap gap-4 text-sm font-medium text-[color:var(--content-secondary)] sm:hidden">
           <RouterLink
             v-for="link in headerLinks"
@@ -57,6 +57,7 @@ const isActive = (path: string) => route.path === path
           >
             {{ link.label }}
           </RouterLink>
+          <LanguageMenu class="mt-2" />
         </nav>
       </div>
     </header>
@@ -81,8 +82,6 @@ const isActive = (path: string) => route.path === path
             {{ link.label }}
           </RouterLink>
         </nav>
-
-        <LanguageMenu />
       </div>
     </footer>
   </div>
