@@ -13,6 +13,8 @@ const languages = computed(() =>
   }))
 )
 
+const isActive = (code: string) => normalizeLocale(locale.value) === code
+
 const displayLabel = (code: string) => {
   if (code.startsWith('en')) return 'EN'
   if (code.startsWith('fr')) return 'FR'
@@ -35,11 +37,13 @@ const handleChange = (code: string) => {
       type="button"
       class="rounded-md border px-3 py-1 text-sm font-medium transition"
       :class="
-        normalizeLocale(locale.value) === lang.code
+        isActive(lang.code)
           ? 'border-[color:var(--brand-primary)] bg-[color:var(--brand-primary)] text-white'
-          : 'border-[color:var(--border)] text-[color:var(--content-secondary)] hover:text-[color:var(--content-primary)]'
+          : 'border-[color:var(--border)] bg-transparent text-[color:var(--content-secondary)] hover:text-[color:var(--content-primary)]'
       "
       :title="lang.label"
+      :aria-pressed="isActive(lang.code)"
+      :aria-current="isActive(lang.code) ? 'true' : undefined"
       @click="handleChange(lang.code)"
     >
       {{ displayLabel(lang.code) }}
