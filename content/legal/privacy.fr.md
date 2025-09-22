@@ -1,3 +1,3 @@
-Politique de confidentialité DiveFive
+# Politique de confidentialité DiveFive
 
-DiveFive collecte uniquement les données nécessaires pour synchroniser et sécuriser vos carnets de plongée. Nous ne vendons pas d'informations personnelles et suivons les directives de l'App Store.
+Bientôt disponible.

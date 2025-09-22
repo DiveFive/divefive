@@ -1,0 +1,14 @@
+[
+  {
+    "id": "2025-02-15-nitrox-planner",
+    "title": "Nitrox Planner",
+    "date": "2025-02-15",
+    "body": "<p>Fine-tune your nitrox blends with automatic MOD calculations and friendly reminders before each dive.</p><ul><li>Enter target depth and oxygen percentage</li><li>Review MOD safety guidance in real time</li><li>Save presets for frequent training profiles</li></ul>"
+  },
+  {
+    "id": "2025-01-10-offline-dive-maps",
+    "title": "Offline Dive Maps",
+    "date": "2025-01-10",
+    "body": "<p>Bring detailed bathymetry and hazard notes with you, even when the boat loses signal.</p><ul><li>Sync region maps before your trip</li><li>Highlight entry and exit points for your team</li><li>Capture your own annotations for future dives</li></ul>"
+  }
+]

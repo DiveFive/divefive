@@ -2,7 +2,7 @@
 import { onMounted, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 
-import { loadContent } from '@/util/fetchContent'
+import { loadContent } from '@/utils/fetchContent'
 
 const { t, locale } = useI18n()
 const body = ref('')

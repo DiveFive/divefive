@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "build:manifests": "node ./scripts/build-manifests.mjs",
+    "predev": "npm run build:manifests",
     "prebuild": "npm run build:manifests",
-    "dev": "npm run build:manifests && vite",
+    "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },

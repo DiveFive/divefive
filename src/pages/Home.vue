@@ -3,47 +3,43 @@ import { computed, defineComponent, onMounted, ref, watch } from 'vue'
 import { useI18n } from 'vue-i18n'
 
 import AppStoreBadge from '@/components/AppStoreBadge.vue'
+import NewFeatures from '@/components/NewFeatures.vue'
 import ShowcaseSection from '@/components/ShowcaseSection.vue'
 import logo from '@/assets/images/logo.png'
 import imgAdd from '@/assets/images/AddNewDive.png'
 import imgList from '@/assets/images/DiveLogList.png'
 import imgDetail from '@/assets/images/DiveDetail.png'
 import imgSite from '@/assets/images/DiveSiteDetail.png'
-import { loadContent } from '@/util/fetchContent'
+import { loadContent } from '@/utils/fetchContent'
 
 interface RemoteScreenshot {
   file: string
   alt?: string
 }
 
-interface FeatureHighlight {
-  title: string
-  date?: string
-  body: string
-  image?: string
-}
-
 const { t, tm, locale } = useI18n()
 
 const appCopy = ref<Record<string, { body?: string }>>({})
 const screenshots = ref<RemoteScreenshot[]>([])
-const newFeaturesSource = ref<unknown>(null)
+const DEFAULT_APP_STORE_URL =
+  'https://apps.apple.com/mx/app/divefive-be-a-better-diver/id6749786184?l=en-GB'
+const appStoreUrl = ref(DEFAULT_APP_STORE_URL)
 
 const fetchContent = async () => {
-  const [copyData, screenData, featuresData] = await Promise.all([
+  const [copyData, screenData, appStoreData] = await Promise.all([
     loadContent('appcopy', locale.value),
     loadContent('screenshots', locale.value),
-    loadContent('new-features', locale.value),
+    loadContent('appstore', locale.value),
   ])
 
   appCopy.value = copyData && typeof copyData === 'object' ? copyData : {}
   screenshots.value = Array.isArray(screenData) ? screenData : []
 
-  if (Array.isArray(featuresData) || (featuresData && typeof featuresData === 'object')) {
-    newFeaturesSource.value = featuresData
-  } else {
-    newFeaturesSource.value = []
-  }
+  const resolved =
+    appStoreData && typeof appStoreData === 'object' && 'url' in appStoreData
+      ? String((appStoreData as { url?: string }).url || '')
+      : ''
+  appStoreUrl.value = resolved.trim() || DEFAULT_APP_STORE_URL
 }
 
 onMounted(fetchContent)
@@ -86,36 +82,6 @@ const premiumSubtitle = computed(
 
 const features = computed(() => tm('features.items'))
 const premiumBenefits = computed(() => tm('premium.benefits'))
-
-const escapeHtml = (value: string) =>
-  value
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#39;')
-
-const newFeaturesItems = computed<FeatureHighlight[]>(() => {
-  if (!Array.isArray(newFeaturesSource.value)) return []
-  return (newFeaturesSource.value as FeatureHighlight[]).filter(
-    (item) => item && item.title && item.body,
-  )
-})
-
-const newFeaturesHtml = computed(() => {
-  if (Array.isArray(newFeaturesSource.value)) return ''
-  const body = (newFeaturesSource.value as { body?: string } | null)?.body ?? ''
-  const trimmed = body.trim()
-  if (!trimmed) return ''
-  return trimmed
-    .split(/\n\s*\n/)
-    .map((paragraph) => `<p>${escapeHtml(paragraph)}</p>`)
-    .join('')
-})
-
-const hasNewFeatures = computed(
-  () => newFeaturesItems.value.length > 0 || newFeaturesHtml.value.length > 0,
-)
 
 const formatFeatureDate = (value?: string) => {
   if (!value) return ''
@@ -180,7 +146,14 @@ const onCtaLeave = (event: MouseEvent) => {
         {{ t('hero.subtitle') }}
       </h2>
       <img :src="logo" :alt="t('app.name')" class="mx-auto mb-7 h-56" />
-      <AppStoreBadge class="mx-auto mb-10 h-12 w-auto" />
+      <a
+        :href="appStoreUrl"
+        class="mx-auto mb-10 block w-fit"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        <AppStoreBadge class="h-12 w-auto" />
+      </a>
       <p
         class="mx-auto max-w-2xl whitespace-pre-line text-lg text-gray-700 dark:text-[color:#D1D5DB]"
         v-text="heroDescription"
@@ -229,42 +202,7 @@ const onCtaLeave = (event: MouseEvent) => {
       :shots="shots2"
     />
 
-    <section v-if="hasNewFeatures" class="bg-[color:var(--surface)] py-16">
-      <div class="mx-auto max-w-5xl px-6">
-        <h2 class="mb-8 text-center text-3xl font-semibold">{{ t('newFeatures.title') }}</h2>
-
-        <div v-if="newFeaturesItems.length" class="grid gap-6 md:grid-cols-2">
-          <article
-            v-for="(item, index) in newFeaturesItems"
-            :key="`${item.title}-${index}`"
-            class="rounded-2xl border border-[color:var(--border)] bg-[color:var(--surface)] p-6 text-left shadow-sm"
-          >
-            <h3 class="text-xl font-semibold text-[color:var(--content-primary)]">
-              {{ item.title }}
-            </h3>
-            <p v-if="item.date" class="mt-2 text-sm text-[color:var(--content-secondary)]">
-              {{ formatFeatureDate(item.date) }}
-            </p>
-            <p class="mt-4 text-[color:var(--content-secondary)]">
-              {{ item.body }}
-            </p>
-            <img
-              v-if="item.image"
-              :src="item.image"
-              :alt="item.title"
-              class="mt-4 w-full rounded-lg object-cover"
-              loading="lazy"
-            />
-          </article>
-        </div>
-
-        <div
-          v-else
-          class="mx-auto max-w-3xl space-y-4 text-center text-[color:var(--content-secondary)]"
-          v-html="newFeaturesHtml"
-        />
-      </div>
-    </section>
+    <NewFeatures :format-date="formatFeatureDate" class="bg-[color:var(--surface)]" />
 
     <section id="premium" class="bg-white py-20 text-[#111827] dark:bg-[color:#0A0A0A] dark:text-[color:#F3F4F6]">
       <div class="mx-auto max-w-4xl px-6">
@@ -318,7 +256,9 @@ const onCtaLeave = (event: MouseEvent) => {
     </section>
 
     <section class="bg-white py-16 text-center dark:bg-[color:#0A0A0A]">
-      <AppStoreBadge class="mx-auto h-12 w-auto" />
+      <a :href="appStoreUrl" class="mx-auto block w-fit" target="_blank" rel="noreferrer noopener">
+        <AppStoreBadge class="h-12 w-auto" />
+      </a>
     </section>
   </div>
 </template>
