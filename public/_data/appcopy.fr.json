@@ -1,0 +1,29 @@
+{
+  "faq": {
+    "body": "Foire aux questions\n\nQuels appareils sont compatibles avec DiveFive ?\nDiveFive fonctionne sur iPhone et Apple Watch avec iOS 17 ou version ultérieure.\n\nPuis-je exporter mes données ?\nOui, exportez vers UDDF, CSV et PDF en un geste.\n"
+  },
+  "features": {
+    "body": "Vue d’ensemble des fonctionnalités de DiveFive\nDiveFive centralise la consignation, les analyses et la planification des sites de plongée dans un espace unique conçu pour les plongeurs professionnels.\n"
+  },
+  "home-features": {
+    "body": "Ce que DiveFive fait pour vous\nDiveFive centralise la consignation, l’analyse et la planification des sites de plongée dans un espace unique pensé pour les plongeurs professionnels.\n"
+  },
+  "home-hero": {
+    "body": "DiveFive est le carnet professionnel des plongeurs qui veulent analyser leurs plongées, surveiller la sécurité et raconter chaque immersion avec précision.\n"
+  },
+  "home-showcase": {
+    "body": "Journal précis, visuels soignés\nConsignez vos plongées, organisez vos cartes et gardez des données impeccables.\n\nAccélérez votre workflow de plongée\nAnalysez chaque détail pour progresser plongée après plongée.\n"
+  },
+  "premium-copy": {
+    "body": "Analyses avancées et outils professionnels.\n"
+  },
+  "presskitIntro": {
+    "body": "Retrouvez les messages officiels, les ressources et les métadonnées pour présenter DiveFive fidèlement dans la presse, sur les réseaux et sur l’App Store.\n"
+  },
+  "releaseNotes": {
+    "body": "DiveFive 1.0\n- Nouveau tableau de bord professionnel avec graphiques de profondeur et de température\n- Gestionnaire de sites de plongée avec GPS et notes hors ligne\n- Import depuis l’Apple Watch Ultra et les ordinateurs compatibles\n- Export vers UDDF, CSV et PDF\n- Accessibilité et localisation complètes en anglais, espagnol (Mexique) et français\n"
+  },
+  "storeDescription": {
+    "body": "DiveFive est le compagnon complet pour consigner vos plongées avec précision, obtenir des analyses utiles et conserver un journal magnifique de chaque immersion.\n\nPoints forts :\n• Journal complet avec profils, équipement et binômes\n• Import depuis l’Apple Watch et les ordinateurs compatibles UDDF\n• Base personnelle de sites avec cartes, notes et évaluations\n• Analyses pour suivre profondeur, temps, paliers de sécurité et progression\n• Exports partageables pour les agences et les coachs\n\nConçue par des plongeurs, DiveFive garde vos aventures organisées, instructives et prêtes pour la prochaine descente.\n"
+  }
+}

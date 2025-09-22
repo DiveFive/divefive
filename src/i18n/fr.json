@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "DiveFive",
+    "copyright": "© 2025 DiveFive. Tous droits réservés.",
+    "aria": {
+      "featureCard": "Carte de fonctionnalité DiveFive",
+      "languageMenu": "Sélectionner la langue d’affichage"
+    }
+  },
+  "nav": {
+    "home": "Accueil",
+    "features": "Fonctionnalités",
+    "faq": "FAQ",
+    "premium": "Premium",
+    "privacy": "Confidentialité",
+    "terms": "Conditions"
+  },
+  "language": {
+    "label": "Langue",
+    "options": {
+      "en": "English",
+      "es-MX": "Español (México)",
+      "fr": "Français"
+    }
+  },
+  "hero": {
+    "title": "DiveFive",
+    "subtitle": "Progressez à chaque plongée."
+  },
+  "features": {
+    "title": "Ce que DiveFive fait pour vous",
+    "items": [
+      {
+        "title": "Consignez chaque plongée",
+        "desc": "Profondeur, durée, température, notes et équipement.",
+        "icon": "notebook"
+      },
+      {
+        "title": "Importez depuis l’Apple Watch",
+        "desc": "HealthKit et UDDF pour des journaux précis.",
+        "icon": "sync"
+      },
+      {
+        "title": "Cartographiez vos sites favoris",
+        "desc": "Planifiez sereinement avec les détails des sites.",
+        "icon": "map"
+      },
+      {
+        "title": "Analysez et progressez",
+        "desc": "Tendances et statistiques pour améliorer vos plongées.",
+        "icon": "stats"
+      }
+    ]
+  },
+  "showcase": {
+    "wallpapersTitle": "Journal précis, visuels soignés",
+    "wallpapersDesc": "Consignez vos plongées, organisez vos cartes et gardez des données impeccables.",
+    "superchargeTitle": "Accélérez votre workflow de plongée",
+    "superchargeDesc": "Analysez chaque détail pour progresser plongée après plongée."
+  },
+  "newFeatures": {
+    "title": "Nouvelles fonctionnalités"
+  },
+  "screens": {
+    "title": "Captures d’écran",
+    "add": "Ajouter une plongée",
+    "list": "Liste des plongées",
+    "detail": "Détail de plongée",
+    "site": "Fiche du site",
+    "close": "Fermer"
+  },
+  "premium": {
+    "title": "DiveFive Premium",
+    "subtitle": "Analyses avancées et outils professionnels.",
+    "cta": "Obtenir DiveFive Premium",
+    "plans": {
+      "free": "Gratuit",
+      "premium": "Premium"
+    },
+    "benefits": [
+      "Analyses avancées",
+      "Filtres puissants",
+      "Exports pro",
+      "Support prioritaire",
+      "Plus de sites et de matériel",
+      "Synchronisation cloud à venir"
+    ]
+  },
+  "legal": {
+    "privacy": "Confidentialité",
+    "terms": "Conditions"
+  },
+  "faq": {
+    "title": "Foire aux questions"
+  },
+  "featuresPage": {
+    "title": "Fonctionnalités"
+  },
+  "gallery": {
+    "open": "Ouvrir la galerie",
+    "close": "Fermer la galerie",
+    "next": "Capture suivante",
+    "prev": "Capture précédente",
+    "zoom": "Basculer le zoom"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "summary": {
+    "locales": ["en", "es-MX", "fr"],
+    "totalKeys": 89,
+    "coverage": {
+      "en": 89,
+      "es-MX": 89,
+      "fr": 89
+    }
+  },
+  "newScopes": [
+    "app.aria",
+    "language.options",
+    "gallery.*",
+    "premium.plans"
+  ],
+  "pending": []
+}

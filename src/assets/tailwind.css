@@ -3,7 +3,8 @@
 @tailwind utilities;
 
 /* === THEME TOKENS (Light / Dark) === */
-:root {
+:root,
+:root[data-theme='light'] {
     /* Brand */
     --brand-primary: #003366;    /* Deep Ocean Blue */
     --brand-accent:  #FF6600;    /* Safety Orange */
@@ -20,7 +21,7 @@
     --ring:   #E5E7EB;
   }
   
-  :root.dark {
+  :root[data-theme='dark'] {
     /* Dark theme */
     --bg:        #0A0A0A;  /* Fondo (dark) según guía */
     --surface:   #111111;  /* Superficie principal */

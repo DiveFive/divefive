@@ -1,0 +1,48 @@
+<script setup lang="ts">
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+import { availableLocales, normalizeLocale, setLocale } from '@/i18n'
+
+const { locale, t } = useI18n()
+
+const languages = computed(() =>
+  availableLocales.map((code) => ({
+    code,
+    label: t(`language.options.${code}`),
+  }))
+)
+
+const displayLabel = (code: string) => {
+  if (code.startsWith('en')) return 'EN'
+  if (code.startsWith('fr')) return 'FR'
+  if (code.startsWith('es')) return 'ES'
+  return code.toUpperCase()
+}
+
+const handleChange = (code: string) => {
+  const normalized = normalizeLocale(code)
+  setLocale(normalized)
+  locale.value = normalized
+}
+</script>
+
+<template>
+  <div class="flex items-center gap-2" role="group" :aria-label="t('language.label')">
+    <button
+      v-for="lang in languages"
+      :key="lang.code"
+      type="button"
+      class="rounded-md border px-3 py-1 text-sm font-medium transition"
+      :class="
+        normalizeLocale(locale.value) === lang.code
+          ? 'border-[color:var(--brand-primary)] bg-[color:var(--brand-primary)] text-white'
+          : 'border-[color:var(--border)] text-[color:var(--content-secondary)] hover:text-[color:var(--content-primary)]'
+      "
+      :title="lang.label"
+      @click="handleChange(lang.code)"
+    >
+      {{ displayLabel(lang.code) }}
+    </button>
+  </div>
+</template>

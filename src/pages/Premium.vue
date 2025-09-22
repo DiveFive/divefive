@@ -1,33 +1,37 @@
-<script setup>
+<script setup lang="ts">
 import { useI18n } from 'vue-i18n'
 
 const { t, tm } = useI18n()
 const benefits = tm('premium.benefits')
+
+const onHover = (event: MouseEvent) => {
+  (event.currentTarget as HTMLButtonElement).style.backgroundColor = '#002A55'
+}
+
+const onLeave = (event: MouseEvent) => {
+  (event.currentTarget as HTMLButtonElement).style.backgroundColor = 'var(--brand-primary)'
+}
 </script>
 
 <template>
-  <section class="max-w-4xl mx-auto p-8 text-[color:var(--content-primary)]">
-    <!-- Título -->
-    <h1 class="text-3xl font-bold mb-4 text-center">
+  <section class="mx-auto max-w-4xl p-8 text-[color:var(--content-primary)]">
+    <h1 class="mb-4 text-center text-3xl font-bold">
       {{ t('premium.title') }}
     </h1>
-    <p class="text-center mb-8 text-[color:var(--content-secondary)]">
+    <p class="mb-8 text-center text-[color:var(--content-secondary)]">
       {{ t('premium.subtitle') }}
     </p>
 
-    <!-- Tabla comparativa -->
-    <div
-      class="overflow-x-auto rounded-xl border mb-8 border-[color:var(--border)] bg-[color:var(--surface)]"
-    >
+    <div class="mb-8 overflow-x-auto rounded-xl border border-[color:var(--border)] bg-[color:var(--surface)]">
       <table class="w-full border-collapse text-left">
         <thead class="bg-[color:var(--surface-2)]">
           <tr class="border-b border-[color:var(--border)]">
-            <th class="text-left p-3"></th>
-            <th class="text-center p-3 text-[color:var(--content-secondary)]">
-              Free
+            <th class="p-3 text-left"></th>
+            <th class="p-3 text-center text-[color:var(--content-secondary)]">
+              {{ t('premium.plans.free') }}
             </th>
-            <th class="text-center p-3 text-[color:var(--content-secondary)]">
-              Premium
+            <th class="p-3 text-center text-[color:var(--content-secondary)]">
+              {{ t('premium.plans.premium') }}
             </th>
           </tr>
         </thead>
@@ -35,31 +39,22 @@ const benefits = tm('premium.benefits')
           <tr
             v-for="(b, idx) in benefits"
             :key="idx"
-            class="border-b last:border-0 border-[color:var(--border)]"
+            class="border-b border-[color:var(--border)] last:border-0"
           >
             <td class="p-3">{{ b }}</td>
-            <td
-              class="text-center p-3 text-[color:var(--content-secondary)]"
-            >
-              ✗
-            </td>
-            <td
-              class="text-center p-3 text-[color:var(--brand-accent)]"
-            >
-              ✓
-            </td>
+            <td class="p-3 text-center text-[color:var(--content-secondary)]">✗</td>
+            <td class="p-3 text-center text-[color:var(--brand-accent)]">✓</td>
           </tr>
         </tbody>
       </table>
     </div>
 
-    <!-- CTA -->
     <div class="text-center">
       <button
-        class="px-6 py-3 rounded-xl text-white transition"
+        class="rounded-xl px-6 py-3 text-white transition"
         style="background-color: var(--brand-primary)"
-        @mouseover="e => e.target.style.backgroundColor = '#002A55'"
-        @mouseleave="e => e.target.style.backgroundColor = 'var(--brand-primary)'"
+        @mouseover="onHover"
+        @mouseleave="onLeave"
       >
         {{ t('premium.cta') }}
       </button>

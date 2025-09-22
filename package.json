@@ -4,7 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "build:manifests": "node ./scripts/build-manifests.mjs",
+    "prebuild": "npm run build:manifests",
+    "dev": "npm run build:manifests && vite",
     "build": "vite build",
     "preview": "vite preview"
   },

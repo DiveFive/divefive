@@ -1,0 +1,106 @@
+{
+  "app": {
+    "name": "DiveFive",
+    "copyright": "© 2025 DiveFive. All rights reserved.",
+    "aria": {
+      "featureCard": "DiveFive feature card",
+      "languageMenu": "Select display language"
+    }
+  },
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "faq": "FAQ",
+    "premium": "Premium",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
+  },
+  "language": {
+    "label": "Language",
+    "options": {
+      "en": "English",
+      "es-MX": "Español (México)",
+      "fr": "Français"
+    }
+  },
+  "hero": {
+    "title": "DiveFive",
+    "subtitle": "Become a better diver."
+  },
+  "features": {
+    "title": "What DiveFive can do for you",
+    "items": [
+      {
+        "title": "Log every dive",
+        "desc": "Depth, time, temperature, notes, and equipment.",
+        "icon": "notebook"
+      },
+      {
+        "title": "Import from Apple Watch",
+        "desc": "HealthKit and UDDF for precise records.",
+        "icon": "sync"
+      },
+      {
+        "title": "Map your favorite sites",
+        "desc": "Plan with confidence using site details.",
+        "icon": "map"
+      },
+      {
+        "title": "Analyze and improve",
+        "desc": "Trends and statistics for better diving.",
+        "icon": "stats"
+      }
+    ]
+  },
+  "showcase": {
+    "wallpapersTitle": "Focused logging, beautiful visuals",
+    "wallpapersDesc": "Log dives, coordinate maps and keep your data clean and professional.",
+    "superchargeTitle": "Supercharge your diving workflow",
+    "superchargeDesc": "Review dive details and sites to improve with every session."
+  },
+  "newFeatures": {
+    "title": "New Features"
+  },
+  "screens": {
+    "title": "Screenshots",
+    "add": "Add new dive",
+    "list": "Dive log list",
+    "detail": "Dive detail",
+    "site": "Dive site detail",
+    "close": "Close"
+  },
+  "premium": {
+    "title": "DiveFive Premium",
+    "subtitle": "Advanced analytics and pro features.",
+    "cta": "Get DiveFive Premium",
+    "plans": {
+      "free": "Free",
+      "premium": "Premium"
+    },
+    "benefits": [
+      "Advanced analytics",
+      "Powerful filters",
+      "Pro exports",
+      "Priority support",
+      "More sites and gear",
+      "Future cloud sync"
+    ]
+  },
+  "legal": {
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
+  },
+  "faq": {
+    "title": "Frequently Asked Questions"
+  },
+  "featuresPage": {
+    "title": "Features"
+  },
+  "gallery": {
+    "open": "Open gallery",
+    "close": "Close gallery",
+    "next": "Next screenshot",
+    "prev": "Previous screenshot",
+    "zoom": "Toggle zoom"
+  }
+}
