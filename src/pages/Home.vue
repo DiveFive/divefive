@@ -202,7 +202,7 @@ const onCtaLeave = (event: MouseEvent) => {
       :shots="shots2"
     />
 
-    <NewFeatures :format-date="formatFeatureDate" class="bg-[color:var(--surface)]" />
+    <!-- <NewFeatures :format-date="formatFeatureDate" class="bg-[color:var(--surface)]" /> -->
 
     <section id="premium" class="bg-white py-20 text-[#111827] dark:bg-[color:#0A0A0A] dark:text-[color:#F3F4F6]">
       <div class="mx-auto max-w-4xl px-6">
@@ -243,14 +243,14 @@ const onCtaLeave = (event: MouseEvent) => {
         </div>
 
         <div class="mt-8 text-center">
-          <button
+          <!-- <button
             class="inline-flex items-center justify-center rounded-xl px-6 py-3 font-medium text-white transition"
             style="background-color: var(--brand-primary)"
             @mouseover="onCtaHover"
             @mouseleave="onCtaLeave"
           >
             {{ t('premium.cta') }}
-          </button>
+          </button> -->
         </div>
       </div>
     </section>

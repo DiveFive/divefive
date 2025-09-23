@@ -10,15 +10,16 @@ useSystemTheme()
 const { t } = useI18n()
 
 const footerLinks = computed(() => [
-  { to: '/faq', label: t('nav.faq') },
+  { to: '/', label: t('Home') },
   { to: '/privacy', label: t('nav.privacy') },
   { to: '/terms', label: t('nav.terms') },
+  { to: '/faq', label: t('nav.faq') },
 ])
 </script>
 
 <template>
   <div class="flex min-h-screen flex-col bg-[color:var(--bg)] text-[color:var(--content-primary)]">
-    <header class="border-b border-[color:var(--border)] bg-[color:var(--surface)]">
+    <header class="bg-[color:var(--surface)]">
       <div class="mx-auto flex max-w-5xl justify-end px-4 py-4">
         <LanguageMenu />
       </div>
