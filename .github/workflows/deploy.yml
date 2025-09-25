@@ -26,6 +26,8 @@ jobs:
       - run: npm ci
       - run: node ./scripts/build-manifests.mjs
       - run: npm run build
+      # Genera el archivo CNAME automáticamente
+      - run: echo "divefive.app" > dist/CNAME
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
@@ -35,3 +37,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/deploy-pages@v4
+
